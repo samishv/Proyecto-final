@@ -39,3 +39,58 @@
 	<string>
 	<iostream>
 
+1672193098 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\integrantes.cpp
+	"Integrantes.h"
+	<iostream>
+	<sstream>
+
+1672191117 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\integrantes.h
+	<string>
+
+1672268064 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\prototipo.cpp
+	"Prototipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672268064 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\prototipo.h
+	"Integrantes.h"
+	<string>
+
+1672260843 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\eliminaciondirecta.cpp
+	"EliminacionDirecta.h"
+
+1672268064 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\eliminaciondirecta.h
+
+1672268064 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\main.cpp
+	<iostream>
+	"Torneo.h"
+
+1672256400 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\torneo.h
+	"Categoria.h"
+
+1672268064 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
+	"Equipo.h"
+	<string>
+
+1672268088 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\equipo.h
+	"Prototipo.h"
+	<string>
+
+1672268522 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
+	"Categoria.h"
+	<iostream>
+	<sstream>
+	<string>
+
+1672268138 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\equipo.cpp
+	"Equipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672268179 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\torneo.cpp
+	"Torneo.h"
+	<string>
+	<iostream>
+

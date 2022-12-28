@@ -19,7 +19,7 @@ void Integrantes::setIntegrante()
 
     getline(cin,nombreIntegrante);
 
-    cout << nombreIntegrante << endl;
+
 
 }
 

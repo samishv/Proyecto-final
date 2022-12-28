@@ -17,7 +17,7 @@ Prototipo::~Prototipo()
 void Prototipo::setPrototipo()
 {
     cin.ignore();
-    cout << "\nIngrese el nombre: " << endl;
+    cout << "\nNombre: " << endl;
 
     getline(cin,nombrePrototipo);
     cout << "\nCantidad de integrantes: " << endl;
@@ -30,26 +30,19 @@ void Prototipo::setPrototipo()
         (INTEGRANTES + i)->setIntegrante();
     }
 
-    cout << "\nIngrese el nombre de su equipo: " << endl;
-    /*cin.ignore();
-    cin.clear();*/
-    getline(cin,equipo);
-
-
 }
 
 string Prototipo::getPrototipo()
 {
     ostringstream salidaPrototipo;
 
+
+
+    salidaPrototipo << "\nPrototipo: " << nombrePrototipo;
+
     for(int i{0}; i < numeroIntegrantes; i++){
-            cout << (INTEGRANTES + i)->getIntegrantes();
-    }
-
-    salidaPrototipo << "\nNombre: " << nombrePrototipo
-                    << "\nEquipo: " << equipo;
-
-
+                cout << (INTEGRANTES + i)->getIntegrantes();
+        }
 
     return salidaPrototipo.str();
 }

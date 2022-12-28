@@ -1,13 +1,13 @@
 #ifndef CATEGORIA_H
 #define CATEGORIA_H
-#include "Prototipo.h"
+#include "Equipo.h"
 #include <string>
 
 class Categoria
 {
     private:
-        int numPrototipos;
-        Prototipo *PROTOTIPOS;
+        int numEquipos;
+        Equipo *EQUIPOS;
 
     public:
         Categoria();

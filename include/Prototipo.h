@@ -9,7 +9,6 @@ class Prototipo
         string nombrePrototipo;
         int numeroIntegrantes;
         Integrantes *INTEGRANTES;
-        string equipo;
 
     public:
         Prototipo();

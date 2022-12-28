@@ -7,7 +7,7 @@ class Torneo
 {
     private:
         int numCategoria;
-        int
+        int opcionEncuentro;
         //int numGetCategoria;
         Categoria MiniRC{};
         Categoria MiniAutonomo{};

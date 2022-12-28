@@ -56,14 +56,35 @@ void Torneo::mostrarCategoria(int numCategoria){
 }
 void Torneo::setEncuentros()
 {
+    bool correcto{false};
+
+    do{
             system("cls");
-            cout << "\n\nElige el sistema de organizacion de encuentros que deseas implementar: ";
+            cout << "\n\nElige el sistema de organizacion de encuentros que deseas implementar: "
                  << "1.-Eliminacion directa\n"
                  << "2.-Por grupos (Round Robin)\n" ;
-                cin >> fixture;
+                cin >> opcionEncuentro;
                 cout << endl << endl;
 
-                Robotica.mostrarCategoria(opcion);
+                /*switch(opcionEncuentro){
+                case 1:
+                    sencilla.setHabitacion();
+                    correcto = true;
+                    break;
+                case 2:
+                    doble.setHabitacion();
+                    correcto = true;
+                    break;
+                case 3:
+                    suite.setHabitacion();
+                    correcto = true;
+                    break;
+                default:
+                    cout << "Opcion invalida, prueba otra vez: " << endl;
+                }*/
+
+    }while(!correcto);
+
 }
 
 

@@ -18,22 +18,23 @@ Categoria::~Categoria()
 
 void Categoria::setCategoria()
 {
-    cout << "Cantidad de prototipos: ";
-    cin >> numPrototipos;
-    PROTOTIPOS = new Prototipo[numPrototipos];
+    cout << "Ingrese la cantidad de equipos que participaran: ";
+    cin >> numEquipos;
+    EQUIPOS = new Equipo[numEquipos];
 
-    for(int i{0}; i < numPrototipos; i++){
-        cout << "\n\nIngrese informacion del prototipo '" << i + 1 << "'";
-        (PROTOTIPOS + i)->setPrototipo();
+    for(int i{0}; i < numEquipos; i++){
+        cout << "\n\nIngrese nombre del equipo " << i+1 << " y registre sus prototipos";
+        (EQUIPOS + i)->setEquipo();
     }
+
 }
 
 string Categoria::getCategoria()
 {
     ostringstream salida;
 
-    for(int i{0}; i < numPrototipos; i++){
-        cout << (PROTOTIPOS + i)->getPrototipo();
+    for(int i{0}; i < numEquipos; i++){
+        cout << (EQUIPOS + i)->getEquipo();
 
     }
     return salida.str();
