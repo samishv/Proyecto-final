@@ -5,6 +5,7 @@
 
 class Equipo
 {
+    friend class Categoria;
     private:
         string nombreEquipo;
         int numPrototipos;

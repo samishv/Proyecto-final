@@ -5,10 +5,11 @@
 
 class Categoria
 {
+    friend class Equipo;
     private:
         int numEquipos;
         Equipo *EQUIPOS;
-
+        int totalPrototipos{0};
     public:
         Categoria();
         virtual ~Categoria();

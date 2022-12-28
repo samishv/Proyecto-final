@@ -39,7 +39,7 @@
 	<string>
 	<iostream>
 
-1672193098 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\integrantes.cpp
+1672268715 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\integrantes.cpp
 	"Integrantes.h"
 	<iostream>
 	<sstream>
@@ -47,7 +47,7 @@
 1672191117 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\integrantes.h
 	<string>
 
-1672268064 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\prototipo.cpp
+1672268715 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\prototipo.cpp
 	"Prototipo.h"
 	<iostream>
 	<string>
@@ -62,28 +62,28 @@
 
 1672268064 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\eliminaciondirecta.h
 
-1672268064 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\main.cpp
+1672269462 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\main.cpp
 	<iostream>
 	"Torneo.h"
 
-1672256400 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\torneo.h
+1672269462 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\torneo.h
 	"Categoria.h"
 
-1672268064 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
+1672270696 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
 	"Equipo.h"
 	<string>
 
-1672268088 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\equipo.h
+1672270696 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\equipo.h
 	"Prototipo.h"
 	<string>
 
-1672268522 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
+1672269462 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
 	"Categoria.h"
 	<iostream>
 	<sstream>
 	<string>
 
-1672268138 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\equipo.cpp
+1672270855 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\equipo.cpp
 	"Equipo.h"
 	<iostream>
 	<string>

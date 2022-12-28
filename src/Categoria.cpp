@@ -23,10 +23,12 @@ void Categoria::setCategoria()
     EQUIPOS = new Equipo[numEquipos];
 
     for(int i{0}; i < numEquipos; i++){
-        cout << "\n\nIngrese nombre del equipo " << i+1 << " y registre sus prototipos";
+        system("cls");
+        cout << "\n\nIngrese nombre del equipo " << i+1 << " y registre sus prototipos\n";
         (EQUIPOS + i)->setEquipo();
+        totalPrototipos+=(EQUIPOS + i)->numPrototipos;
     }
-
+    cout << totalPrototipos << endl;
 }
 
 string Categoria::getCategoria()

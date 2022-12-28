@@ -8,12 +8,10 @@ class Torneo
     private:
         int numCategoria;
         int opcionEncuentro;
-        //int numGetCategoria;
         Categoria MiniRC{};
         Categoria MiniAutonomo{};
 
 
-        //Categoria *CATEGORIAS;
 
     public:
         Torneo();
