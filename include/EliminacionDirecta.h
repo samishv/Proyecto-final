@@ -6,12 +6,15 @@ class EliminacionDirecta
 {
 
     private:
+        int totalPrototipos;
 
     public:
-        EliminacionDirecta();
+        EliminacionDirecta(int);
         virtual ~EliminacionDirecta();
+        int prueba2n();
 
     protected:
+
 
 
 };

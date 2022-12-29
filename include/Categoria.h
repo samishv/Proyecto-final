@@ -5,7 +5,6 @@
 
 class Categoria
 {
-    friend class Equipo;
     private:
         int numEquipos;
         Equipo *EQUIPOS;
@@ -15,6 +14,7 @@ class Categoria
         virtual ~Categoria();
         void setCategoria();
         string getCategoria();
+        inline int getTotalPrototipos(){return totalPrototipos;}
 
     protected:
 

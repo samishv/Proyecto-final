@@ -17,7 +17,7 @@ Prototipo::~Prototipo()
 void Prototipo::setPrototipo()
 {
     cin.ignore();
-    cout << "\nNombre: " << endl;
+    cout << "\nNombre: ";
 
     getline(cin,nombrePrototipo);
     cout << "\nCantidad de integrantes: " << endl;

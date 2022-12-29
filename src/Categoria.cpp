@@ -27,6 +27,8 @@ void Categoria::setCategoria()
         cout << "\n\nIngrese nombre del equipo " << i+1 << " y registre sus prototipos\n";
         (EQUIPOS + i)->setEquipo();
         totalPrototipos+=(EQUIPOS + i)->numPrototipos;
+
+
     }
     cout << totalPrototipos << endl;
 }

@@ -1,6 +1,6 @@
 #ifndef TORNEO_H
 #define TORNEO_H
-
+#include "EliminacionDirecta.h"
 #include "Categoria.h"
 
 class Torneo

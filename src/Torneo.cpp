@@ -59,29 +59,28 @@ void Torneo::setEncuentros()
     bool correcto{false};
 
     do{
-            system("cls");
-            cout << "\n\nElige el sistema de organizacion de encuentros que deseas implementar: "
+            //system("cls");
+            cout << "\nElige el sistema de organizacion de encuentros que deseas implementar: \n"
                  << "1.-Eliminacion directa\n"
                  << "2.-Por grupos (Round Robin)\n" ;
                 cin >> opcionEncuentro;
                 cout << endl << endl;
 
-                /*switch(opcionEncuentro){
-                case 1:
-                    sencilla.setHabitacion();
-                    correcto = true;
-                    break;
-                case 2:
-                    doble.setHabitacion();
-                    correcto = true;
-                    break;
-                case 3:
-                    suite.setHabitacion();
-                    correcto = true;
-                    break;
-                default:
-                    cout << "Opcion invalida, prueba otra vez: " << endl;
-                }*/
+                switch(opcionEncuentro){
+                    case 1:
+                        {
+                        EliminacionDirecta eleccion(MiniRC.getTotalPrototipos());
+                        eleccion.prueba2n();
+                        correcto = true;
+                        break;
+                        }
+                    case 2:
+                        cout << "caso 2" << endl;
+                        correcto=true;
+                        break;
+                    default:
+                        cout << "Opcion invalida, prueba otra vez: " << endl;
+                }
 
     }while(!correcto);
 
