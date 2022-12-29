@@ -5,6 +5,7 @@
 
 class Torneo
 {
+    friend class EliminacionDirecta;
     private:
         int numCategoria;
         int opcionEncuentro;

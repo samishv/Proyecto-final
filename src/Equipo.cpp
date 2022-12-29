@@ -15,7 +15,7 @@ Equipo::~Equipo()
 void Equipo::setEquipo()
 {
     cin.ignore();
-    cout << "\nNombre del equipo: " << endl;
+    cout << "\nNombre del equipo: ";
     getline(cin,nombreEquipo);
 
 
@@ -28,18 +28,25 @@ void Equipo::setEquipo()
         (PROTOTIPOS + i)->setPrototipo();
     }
 }
-string Equipo::getEquipo()
+string Equipo::getEquipos()
 {
-    ostringstream salidaEquipo;
+    ostringstream salidaEquipos;
 
-
-
-    salidaEquipo << "\nEquipo: " << nombreEquipo;
+    salidaEquipos << "\nEquipo: " << nombreEquipo;
 
     for(int i{0}; i < numPrototipos; i++){
                 cout << (PROTOTIPOS + i)->getPrototipo();
         }
 
+
+    return salidaEquipos.str();
+}
+
+string Equipo::getEquipo(int posicionPrototipo)
+{
+    ostringstream salidaEquipo;
+
+    salidaEquipo <<  (PROTOTIPOS + posicionPrototipo)->getNombrePrototipo();
 
     return salidaEquipo.str();
 }

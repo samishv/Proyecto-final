@@ -5,7 +5,6 @@
 
 class Equipo
 {
-    friend class Categoria;
     private:
         string nombreEquipo;
         int numPrototipos;
@@ -15,7 +14,9 @@ class Equipo
         Equipo();
         virtual ~Equipo();
         void setEquipo();
-        string getEquipo();
+        string getEquipos();
+        string getEquipo(int);
+        inline int getnumPrototipos(){return numPrototipos;}
 
     protected:
 

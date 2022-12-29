@@ -5,16 +5,22 @@
 
 class Categoria
 {
+
     private:
         int numEquipos;
         Equipo *EQUIPOS;
         int totalPrototipos{0};
+        int numPrototipos;
     public:
         Categoria();
         virtual ~Categoria();
         void setCategoria();
         string getCategoria();
-        inline int getTotalPrototipos(){return totalPrototipos;}
+        //inline int getTotalPrototipos(){return totalPrototipos;}
+        //inline int getTotalEquipos(){return numEquipos;}
+        int getInfoEquipo(int);
+        string getInfoPrototipo(int,int);
+        void eliminacionDirecta();
 
     protected:
 

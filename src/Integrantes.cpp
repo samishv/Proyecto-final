@@ -15,7 +15,7 @@ Integrantes::~Integrantes()
 }
 void Integrantes::setIntegrante()
 {
-    cout << "\nNombre: "<<endl;
+    cout << "\nNombre: ";
 
     getline(cin,nombreIntegrante);
 

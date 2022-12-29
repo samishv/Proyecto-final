@@ -2,6 +2,10 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <chrono>
+#include <random>
+#include <windows.h>
+#include <vector>
 
 using namespace std;
 
@@ -26,7 +30,7 @@ void Categoria::setCategoria()
         system("cls");
         cout << "\n\nIngrese nombre del equipo " << i+1 << " y registre sus prototipos\n";
         (EQUIPOS + i)->setEquipo();
-        totalPrototipos+=(EQUIPOS + i)->numPrototipos;
+        totalPrototipos+=(EQUIPOS + i)->getnumPrototipos();
 
 
     }
@@ -38,9 +42,71 @@ string Categoria::getCategoria()
     ostringstream salida;
 
     for(int i{0}; i < numEquipos; i++){
-        cout << (EQUIPOS + i)->getEquipo();
+        cout << (EQUIPOS + i)->getEquipos();
 
     }
     return salida.str();
+}
+
+int Categoria::getInfoEquipo(int posicion){
+
+    return (EQUIPOS+posicion)->getnumPrototipos();
+}
+
+
+string Categoria::getInfoPrototipo(int posicion,int posicionPrototipo)
+{
+    ostringstream salida;
+        cout << (EQUIPOS + posicion)->getEquipo(posicionPrototipo);
+
+
+    return salida.str();
+}
+
+void Categoria::eliminacionDirecta()
+{
+    int n{2};
+    int byes{87};
+    int elegido;
+    string nombreElegido;
+
+    while (pow(2,n)<=totalPrototipos){
+        byes=pow(2,n+1)-totalPrototipos;
+
+        if(pow(2,n)==totalPrototipos){
+            byes = 0;
+            break;
+        }
+        n++;
+    }
+
+         cout << "\nnumero de byes: " << byes << endl;
+
+    // asigna quienes seran los byes
+
+    while(byes!=0){
+        //BYES = new Prototipo[byes];
+         cout << "\nnumero de equipos: " << numEquipos << endl;
+        for(int i=0;i<numEquipos;i++){
+
+
+                numPrototipos=(EQUIPOS + i)->getnumPrototipos();
+                //cout << "Prototipos del equipo '" << i+1 <<"' " << numPrototipos<<endl;
+
+
+                unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();
+                default_random_engine motorG(semilla);
+                uniform_int_distribution<int> pasan(0,numPrototipos);
+                byes--;
+                elegido=pasan(motorG);
+                nombreElegido=(EQUIPOS + i)->getEquipo(elegido);
+                cout << "Del equipo " << i+1 << " pasa el prototipo " << elegido+1 <<" : " << nombreElegido  <<"\nnumero de byes: " << byes << endl;
+
+                if(byes==0){
+                    break;
+                }
+
+        }
+    }
 }
 

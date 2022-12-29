@@ -15,6 +15,7 @@ class Prototipo
         virtual ~Prototipo();
         void setPrototipo();
         string getPrototipo();
+        inline string getNombrePrototipo(){return nombrePrototipo;}
 
 
     protected:

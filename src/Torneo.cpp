@@ -69,13 +69,16 @@ void Torneo::setEncuentros()
                 switch(opcionEncuentro){
                     case 1:
                         {
-                        EliminacionDirecta eleccion(MiniRC.getTotalPrototipos());
-                        eleccion.prueba2n();
+                        MiniRC.eliminacionDirecta();
                         correcto = true;
                         break;
                         }
                     case 2:
-                        cout << "caso 2" << endl;
+                        /*EliminacionDirecta eleccion(MiniRC.getTotalPrototipos(),MiniRC.getTotalEquipos());
+                        eleccion.prueba2n();
+                        eleccion.setByes();
+                        eleccion.asignaByes();*/
+                        cout << "Opcion invalida, prueba otra vez: " << endl;
                         correcto=true;
                         break;
                     default:

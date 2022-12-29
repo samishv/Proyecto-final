@@ -1,11 +1,15 @@
 #include "EliminacionDirecta.h"
 #include <iostream>
+#include <chrono>
+#include <random>
+#include <windows.h>
 
 using namespace std;
 
-EliminacionDirecta::EliminacionDirecta(int totalPrototipos)
+EliminacionDirecta::EliminacionDirecta(int totalPrototipos, int totalEquipos)
 {
     this->totalPrototipos=totalPrototipos;
+    this->totalEquipos=totalEquipos;
     //ctor
 }
 
@@ -26,7 +30,31 @@ int EliminacionDirecta::prueba2n()
         }
         n+=1;
     }
-    cout << "TOTAL : " << totalPrototipos << endl;
-    cout << "byes : " << byes << endl;
+
     return byes;
+}
+
+
+void EliminacionDirecta::asignaByes()
+{
+    cout << "total equipos:" << totalEquipos
+         << "\nnumero de byes: " << numByes << endl;
+
+
+    /*BYES = new Prototipo[numByes];
+
+    while(numByes!=0){
+        for(int i=0;i<totalEquipos;i++){
+                this->numPrototipos=Categoria::MiniRC.getInfoEquipo(i);
+                cout << "Prototipos del equipo '" << i+1 <<"' " << numPrototipos<<endl;
+                for(int j=0;j<numPrototipos;j++){
+                    unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();
+                    default_random_engine motorG(semilla);
+                    uniform_int_distribution<int> pasan(0,numPrototipos);
+                    cout << getInfoPrototipo(i,pasan(motorG)) << endl;
+                    numByes-=1;
+                }
+
+        }
+    }*/
 }

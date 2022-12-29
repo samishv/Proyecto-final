@@ -39,7 +39,7 @@
 	<string>
 	<iostream>
 
-1672268715 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\integrantes.cpp
+1672350505 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\integrantes.cpp
 	"Integrantes.h"
 	<iostream>
 	<sstream>
@@ -53,45 +53,55 @@
 	<string>
 	<sstream>
 
-1672268064 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\prototipo.h
+1672354900 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\prototipo.h
 	"Integrantes.h"
 	<string>
 
-1672286205 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\eliminaciondirecta.cpp
+1672348669 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\eliminaciondirecta.cpp
 	"EliminacionDirecta.h"
 	<iostream>
+	<chrono>
+	<random>
+	<windows.h>
 
-1672287124 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\eliminaciondirecta.h
+1672348527 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\eliminaciondirecta.h
+	"Prototipo.h"
+	"Categoria.h"
+	"Torneo.h"
 
 1672269462 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\main.cpp
 	<iostream>
 	"Torneo.h"
 
-1672284382 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\torneo.h
+1672345869 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\torneo.h
 	"EliminacionDirecta.h"
 	"Categoria.h"
 
-1672284681 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
+1672348619 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
 	"Equipo.h"
 	<string>
 
-1672270696 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\equipo.h
+1672345147 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\equipo.h
 	"Prototipo.h"
 	<string>
 
-1672286565 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
+1672354900 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
 	"Categoria.h"
 	<iostream>
 	<sstream>
 	<string>
+	<chrono>
+	<random>
+	<windows.h>
+	<vector>
 
-1672270855 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\equipo.cpp
+1672354900 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\equipo.cpp
 	"Equipo.h"
 	<iostream>
 	<string>
 	<sstream>
 
-1672286894 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\torneo.cpp
+1672348619 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\torneo.cpp
 	"Torneo.h"
 	<string>
 	<iostream>
