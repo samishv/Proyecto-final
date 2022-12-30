@@ -67,7 +67,7 @@ void Categoria::eliminacionDirecta()
 {
     int n{2};
     int byes{87};
-    int elegido,IDElegido,*BYES;
+    int elegido,IDElegido,*BYES, bandera;
 
     //int j{0};
     //int k;
@@ -99,29 +99,40 @@ void Categoria::eliminacionDirecta()
 
                 numPrototipos=(EQUIPOS + i)->getnumPrototipos();
                 cout << "Prototipos del equipo '" << i+1 <<"' " << numPrototipos<<endl;
+                bandera = 0;
 
                 do{
-                unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();
-                default_random_engine motorG(semilla);
-                uniform_int_distribution<int> pasan(0,numPrototipos-1);
 
-                elegido=pasan(motorG);
-                IDElegido=(EQUIPOS + i)->getEquipo(elegido);
-                BYES[pos]=IDElegido;
-                unique=true;
-                for(int j=0; j<pos; j++){
+                    unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();
+                    default_random_engine motorG(semilla);
+                    uniform_int_distribution<int> pasan(0,numPrototipos-1);
 
-                    if(BYES[j]==IDElegido){
-                        unique=false;
+                    elegido=pasan(motorG);
+                    IDElegido=(EQUIPOS + i)->getEquipo(elegido);
+                    BYES[pos]=IDElegido;
+                    unique=true;
+                    for(int j=0; j<pos; j++){
+
+                        if(BYES[j]==IDElegido){
+                            unique=false;
+                        }
+
                     }
-                }
 
+                    bandera ++;
+                    cout << "Prototipos " << numPrototipos << " Bandera " << bandera <<endl;
 
-                }while(!unique);
+                }while(!unique && bandera<=numPrototipos);
+
+                if(bandera>numPrototipos){
+                        continue;
+                    }
+
                 nombreElegido=(EQUIPOS + i)->getInfoPrototipo(elegido);
                 pos ++;
                 cout << "Del equipo " << i+1 << " pasa el prototipo " << elegido+1 <<" : " << IDElegido  << " " <<nombreElegido << "\nnumero de byes: " << byes << endl;
                 byes--;
+
                 if(byes==0){
                     break;
                 }
