@@ -67,11 +67,11 @@ void Categoria::eliminacionDirecta()
 {
     int n{2};
     int byes{87};
-    int elegido;
-    int IDElegido;
+    int elegido,IDElegido,*BYES;
+
     //int j{0};
     //int k;
-    //int pos{0};
+    int pos{0};
     string nombreElegido;
     //bool unique {false};
 
@@ -86,12 +86,13 @@ void Categoria::eliminacionDirecta()
     }
 
          cout << "\nnumero de byes: " << byes << endl;
+         BYES = new int[byes];
          //k=byes;
 
     // asigna quienes seran los byes
 
     while(byes!=0){
-        //BYES = new Prototipo[byes];
+
          cout << "\nnumero de equipos: " << numEquipos << endl;
         for(int i=0;i<numEquipos;i++){
 
@@ -106,6 +107,8 @@ void Categoria::eliminacionDirecta()
                 byes--;
                 elegido=pasan(motorG);
                 IDElegido=(EQUIPOS + i)->getEquipo(elegido);
+                BYES[pos]=IDElegido;
+                pos ++;
                 cout << "Del equipo " << i+1 << " pasa el prototipo " << elegido+1 <<" : " << IDElegido  <<"\nnumero de byes: " << byes << endl;
 
                 if(byes==0){
@@ -115,6 +118,10 @@ void Categoria::eliminacionDirecta()
         }
 
     }
+
+    for(int j=0; j<pos; j++){
+                    cout << BYES[j] << endl;
+                }
 
     /*for(int j=0; j<pos; j++){
             cout << BYES[j] << endl;
