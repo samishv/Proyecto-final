@@ -51,3 +51,10 @@ int Equipo::getEquipo(int posicionPrototipo)
 
 
 }
+
+string Equipo::getInfoPrototipo(int posicionPrototipo)
+{
+    return(PROTOTIPOS + posicionPrototipo)->getNombrePrototipo();
+
+
+}

@@ -18,6 +18,7 @@ class Equipo
         string getEquipos();
         int getEquipo(int);
         inline int getnumPrototipos(){return numPrototipos;}
+        string getInfoPrototipo(int);
 
     protected:
 

@@ -77,15 +77,15 @@
 	"EliminacionDirecta.h"
 	"Categoria.h"
 
-1672386065 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
+1672439747 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
 	"Equipo.h"
 	<string>
 
-1672386065 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\equipo.h
+1672439824 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\equipo.h
 	"Prototipo.h"
 	<string>
 
-1672386270 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
+1672439262 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
 	"Categoria.h"
 	<iostream>
 	<sstream>
@@ -95,7 +95,7 @@
 	<windows.h>
 	<vector>
 
-1672386065 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\equipo.cpp
+1672439747 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\equipo.cpp
 	"Equipo.h"
 	<iostream>
 	<string>

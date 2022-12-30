@@ -12,6 +12,7 @@ class Categoria
         int totalPrototipos{0};
         int numPrototipos;
         int contPrototipos{0};
+        string nombreElegido;
 
     public:
         Categoria();

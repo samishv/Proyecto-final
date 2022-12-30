@@ -73,7 +73,7 @@ void Categoria::eliminacionDirecta()
     //int k;
     int pos{0};
     string nombreElegido;
-    //bool unique {false};
+    bool unique {false};
 
     while (pow(2,n)<=totalPrototipos){
         byes=pow(2,n+1)-totalPrototipos;
@@ -100,17 +100,28 @@ void Categoria::eliminacionDirecta()
                 numPrototipos=(EQUIPOS + i)->getnumPrototipos();
                 cout << "Prototipos del equipo '" << i+1 <<"' " << numPrototipos<<endl;
 
-
+                do{
                 unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();
                 default_random_engine motorG(semilla);
                 uniform_int_distribution<int> pasan(0,numPrototipos-1);
-                byes--;
+
                 elegido=pasan(motorG);
                 IDElegido=(EQUIPOS + i)->getEquipo(elegido);
                 BYES[pos]=IDElegido;
-                pos ++;
-                cout << "Del equipo " << i+1 << " pasa el prototipo " << elegido+1 <<" : " << IDElegido  <<"\nnumero de byes: " << byes << endl;
+                unique=true;
+                for(int j=0; j<pos; j++){
 
+                    if(BYES[j]==IDElegido){
+                        unique=false;
+                    }
+                }
+
+
+                }while(!unique);
+                nombreElegido=(EQUIPOS + i)->getInfoPrototipo(elegido);
+                pos ++;
+                cout << "Del equipo " << i+1 << " pasa el prototipo " << elegido+1 <<" : " << IDElegido  << " " <<nombreElegido << "\nnumero de byes: " << byes << endl;
+                byes--;
                 if(byes==0){
                     break;
                 }
