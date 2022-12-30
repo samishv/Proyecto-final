@@ -12,8 +12,9 @@ Equipo::~Equipo()
 {
     //dtor
 }
-void Equipo::setEquipo()
+void Equipo::setEquipo(int contProtipos)
 {
+    this->contPrototipos=contProtipos;
     cin.ignore();
     cout << "\nNombre del equipo: ";
     getline(cin,nombreEquipo);
@@ -25,7 +26,9 @@ void Equipo::setEquipo()
 
     for(int i{0}; i < numPrototipos; i++){
         cout << "\n\nIngrese informacion del prototipo '" << i + 1 << "'";
-        (PROTOTIPOS + i)->setPrototipo();
+        cout << "\ncontPrototpipos: " << this->contPrototipos<<endl;
+        (PROTOTIPOS + i)->setPrototipo(this->contPrototipos);
+        this->contPrototipos ++;
     }
 }
 string Equipo::getEquipos()
@@ -42,11 +45,9 @@ string Equipo::getEquipos()
     return salidaEquipos.str();
 }
 
-string Equipo::getEquipo(int posicionPrototipo)
+int Equipo::getEquipo(int posicionPrototipo)
 {
-    ostringstream salidaEquipo;
+    return(PROTOTIPOS + posicionPrototipo)->getIDPrototipo();
 
-    salidaEquipo <<  (PROTOTIPOS + posicionPrototipo)->getNombrePrototipo();
 
-    return salidaEquipo.str();
 }

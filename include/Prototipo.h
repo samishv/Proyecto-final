@@ -9,13 +9,15 @@ class Prototipo
         string nombrePrototipo;
         int numeroIntegrantes;
         Integrantes *INTEGRANTES;
+        int ID_prototipo;
 
     public:
         Prototipo();
         virtual ~Prototipo();
-        void setPrototipo();
+        void setPrototipo(int);
         string getPrototipo();
         inline string getNombrePrototipo(){return nombrePrototipo;}
+        inline int getIDPrototipo(){return ID_prototipo;}
 
 
     protected:

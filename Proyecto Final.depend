@@ -47,13 +47,13 @@
 1672191117 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\integrantes.h
 	<string>
 
-1672275588 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\prototipo.cpp
+1672384678 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\prototipo.cpp
 	"Prototipo.h"
 	<iostream>
 	<string>
 	<sstream>
 
-1672354900 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\prototipo.h
+1672384678 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\prototipo.h
 	"Integrantes.h"
 	<string>
 
@@ -77,25 +77,25 @@
 	"EliminacionDirecta.h"
 	"Categoria.h"
 
-1672348619 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
+1672386065 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
 	"Equipo.h"
 	<string>
 
-1672345147 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\equipo.h
+1672386065 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\equipo.h
 	"Prototipo.h"
 	<string>
 
-1672354900 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
+1672386270 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
 	"Categoria.h"
 	<iostream>
 	<sstream>
-	<string>
+	<string.h>
 	<chrono>
 	<random>
 	<windows.h>
 	<vector>
 
-1672354900 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\equipo.cpp
+1672386065 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\equipo.cpp
 	"Equipo.h"
 	<iostream>
 	<string>

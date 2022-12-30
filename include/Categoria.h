@@ -11,6 +11,8 @@ class Categoria
         Equipo *EQUIPOS;
         int totalPrototipos{0};
         int numPrototipos;
+        int contPrototipos{0};
+
     public:
         Categoria();
         virtual ~Categoria();
