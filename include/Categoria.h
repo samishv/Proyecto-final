@@ -13,6 +13,8 @@ class Categoria
         int numPrototipos;
         int contPrototipos{0};
         string nombreElegido;
+        int numRondas;
+        int numEnfrentamientos;
 
     public:
         Categoria();
