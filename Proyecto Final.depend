@@ -69,15 +69,15 @@
 	"Categoria.h"
 	"Torneo.h"
 
-1672269462 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\main.cpp
+1672526038 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\main.cpp
 	<iostream>
 	"Torneo.h"
 
-1672345869 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\torneo.h
+1672527701 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\torneo.h
 	"EliminacionDirecta.h"
 	"Categoria.h"
 
-1672472052 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
+1672528191 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
 	"Equipo.h"
 	"Enfrentamientos.h"
 	<string>
@@ -86,7 +86,7 @@
 	"Prototipo.h"
 	<string>
 
-1672441265 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
+1672523448 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
 	"Categoria.h"
 	<iostream>
 	<sstream>
@@ -102,7 +102,7 @@
 	<string>
 	<sstream>
 
-1672463954 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\torneo.cpp
+1672526174 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\torneo.cpp
 	"Torneo.h"
 	<string>
 	<iostream>

@@ -5,7 +5,7 @@
 
 class Torneo
 {
-    friend class EliminacionDirecta;
+
     private:
         int numCategoria;
         int opcionEncuentro;
@@ -18,7 +18,7 @@ class Torneo
         Torneo();
         virtual ~Torneo();
         void setTorneo();
-        void setEncuentros();
+        void setEncuentros(Categoria&);
         void mostrarCategoria(int);
 
     protected:

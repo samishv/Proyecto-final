@@ -30,9 +30,11 @@ void Torneo::setTorneo(){
         switch(numCategoria){
         case 1:
             MiniRC.setCategoria();
+            setEncuentros(MiniRC);
             break;
         case 2:
             MiniAutonomo.setCategoria();
+            setEncuentros(MiniAutonomo);
             break;
         default:
             cout << "Opcion invalida, prueba otra vez: " << endl;
@@ -54,7 +56,7 @@ void Torneo::mostrarCategoria(int numCategoria){
         }
 
 }
-void Torneo::setEncuentros()
+void Torneo::setEncuentros(Categoria& categoriaActiva)
 {
     bool correcto{false};
 
@@ -69,7 +71,8 @@ void Torneo::setEncuentros()
                 switch(opcionEncuentro){
                     case 1:
                         {
-                        MiniRC.eliminacionDirecta();
+                        categoriaActiva.setByes();
+                        categoriaActiva.eliminacionDirecta();
                         correcto = true;
                         break;
                         }
