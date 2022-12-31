@@ -59,7 +59,7 @@ void Torneo::setEncuentros()
     bool correcto{false};
 
     do{
-            //system("cls");
+            system("cls");
             cout << "\nElige el sistema de organizacion de encuentros que deseas implementar: \n"
                  << "1.-Eliminacion directa\n"
                  << "2.-Por grupos (Round Robin)\n" ;

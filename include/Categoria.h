@@ -30,6 +30,7 @@ class Categoria: public Enfrentamientos
         string getInfoPrototipo(int,int);
         void eliminacionDirecta();
 
+
     protected:
 
 

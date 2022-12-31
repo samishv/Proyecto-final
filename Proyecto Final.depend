@@ -77,7 +77,7 @@
 	"EliminacionDirecta.h"
 	"Categoria.h"
 
-1672454701 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
+1672472052 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
 	"Equipo.h"
 	"Enfrentamientos.h"
 	<string>
@@ -102,14 +102,14 @@
 	<string>
 	<sstream>
 
-1672348619 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\torneo.cpp
+1672463954 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\torneo.cpp
 	"Torneo.h"
 	<string>
 	<iostream>
 
-1672447933 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\enfrentamientos.cpp
+1672472052 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\enfrentamientos.cpp
 	"Enfrentamientos.h"
 
-1672454701 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\enfrentamientos.h
+1672475618 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\enfrentamientos.h
 	<string>
 
