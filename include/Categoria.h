@@ -1,9 +1,11 @@
 #ifndef CATEGORIA_H
 #define CATEGORIA_H
 #include "Equipo.h"
+#include "Enfrentamientos.h"
 #include <string>
 
-class Categoria
+class Categoria: public Enfrentamientos
+
 {
 
     private:
@@ -15,6 +17,7 @@ class Categoria
         string nombreElegido;
         int numRondas;
         int numEnfrentamientos;
+        Enfrentamientos *ENFRENTAMIENTOS;
 
     public:
         Categoria();

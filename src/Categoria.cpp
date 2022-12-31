@@ -67,10 +67,12 @@ void Categoria::eliminacionDirecta()
 {
     int n{2};
     int byes{87};
-    int elegido,IDElegido,*BYES, *PARTICIPANTES, bandera,numParticipantes,byesRestantes;
+    int elegido,IDElegido,*BYES, *PARTICIPANTES, bandera,numParticipantes,byesRestantes,numEnfrentamiento;
     int pos{0};
     string nombreElegido;
     bool unique {false};
+    bool nuevoEnfrentamiento {true};
+
 
 
 
@@ -147,7 +149,8 @@ void Categoria::eliminacionDirecta()
             cout << BYES[j] << endl;
     }
 
-    // Asigna los enfrentamientos
+// Asigna los enfrentamientos
+
         pos=0;
         //numRondas=totalPrototipos-1;
         numRondas=0;
@@ -157,6 +160,9 @@ void Categoria::eliminacionDirecta()
         for(int i =0; i<=numRondas; i++){
 
             PARTICIPANTES= new int[numParticipantes];
+            ENFRENTAMIENTOS = new Enfrentamientos[numParticipantes/2];
+            numEnfrentamiento=0;
+
 
             while(numParticipantes!=0){
 
@@ -207,6 +213,16 @@ void Categoria::eliminacionDirecta()
 
                 nombreElegido=(EQUIPOS + i)->getInfoPrototipo(elegido);
                 pos ++;
+
+                if(nuevoEnfrentamiento){
+                    (ENFRENTAMIENTOS+numEnfrentamiento)->setCompetidorRojo(nombreElegido);
+                    nuevoEnfrentamiento=false;
+                }else{
+                    (ENFRENTAMIENTOS+numEnfrentamiento)->setCompetidorAzul(nombreElegido);
+                    nuevoEnfrentamiento=true;
+                    numEnfrentamiento++;
+                }
+
                 cout << "Del equipo " << i+1 << " el prototipo " << elegido+1 <<" : " << IDElegido  << " " <<nombreElegido << "\nnumero de byes: " << byesRestantes << endl;
                 numParticipantes--;
 
@@ -214,13 +230,24 @@ void Categoria::eliminacionDirecta()
                     break;
                 }
 
+                }
+
             }
 
+
+              for(int i=0; i<numEnfrentamientos; i++){
+
+                    cout << "\nENFRENTAMIENTO " << i+1 << ": "
+                        << (ENFRENTAMIENTOS+i)->getCompetidorRojo() << " vs " << (ENFRENTAMIENTOS+i)->getCompetidorAzul() << endl;
+
+
+            }
+
+
+
         }
-          for(int j=0; j<pos; j++){
-            cout << PARTICIPANTES[j] << endl;
-          }
+
     }
 
-}
+
 
