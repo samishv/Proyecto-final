@@ -32,14 +32,19 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Categoria.h" />
+		<Unit filename="include/EliminacionDirecta.h" />
+		<Unit filename="include/Enfrentamientos.h" />
+		<Unit filename="include/Equipo.h" />
 		<Unit filename="include/Integrantes.h" />
 		<Unit filename="include/Prototipo.h" />
 		<Unit filename="include/Torneo.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Categoria.cpp" />
+		<Unit filename="src/EliminacionDirecta.cpp" />
+		<Unit filename="src/Enfrentamientos.cpp" />
+		<Unit filename="src/Equipo.cpp" />
 		<Unit filename="src/Integrantes.cpp" />
 		<Unit filename="src/Prototipo.cpp" />
 		<Unit filename="src/Torneo.cpp" />

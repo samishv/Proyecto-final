@@ -14,13 +14,14 @@ Prototipo::~Prototipo()
 {
     //dtor
 }
-void Prototipo::setPrototipo()
+void Prototipo::setPrototipo(int ID_prototipo)
 {
-    cin.ignore();
+    this->ID_prototipo=ID_prototipo;
+    fflush(stdin);
     cout << "\nNombre: ";
 
     getline(cin,nombrePrototipo);
-    cout << "\nCantidad de integrantes: " << endl;
+    cout << "\nCantidad de integrantes: ";
     cin >>  numeroIntegrantes;
     INTEGRANTES = new Integrantes[numeroIntegrantes];
     cin.ignore();
@@ -29,6 +30,7 @@ void Prototipo::setPrototipo()
         cout << "\n\nIngrese informacion del integrante '" << i + 1 << "'";
         (INTEGRANTES + i)->setIntegrante();
     }
+
 
 }
 

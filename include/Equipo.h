@@ -9,14 +9,16 @@ class Equipo
         string nombreEquipo;
         int numPrototipos;
         Prototipo *PROTOTIPOS;
+        int contPrototipos;
 
     public:
         Equipo();
         virtual ~Equipo();
-        void setEquipo();
+        void setEquipo(int);
         string getEquipos();
-        string getEquipo(int);
+        int getEquipo(int);
         inline int getnumPrototipos(){return numPrototipos;}
+        string getInfoPrototipo(int);
 
     protected:
 

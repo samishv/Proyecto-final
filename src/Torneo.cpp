@@ -25,14 +25,16 @@ void Torneo::setTorneo(){
     cout << "\nElige la categoria a registrar:\n"
              << "1.-Minisumo RC\n"
              << "2.-Minisumo autonomo" << endl;
-        cin >> numCategoria;
+    cin >> numCategoria;
 
         switch(numCategoria){
         case 1:
             MiniRC.setCategoria();
+            setEncuentros(MiniRC);
             break;
         case 2:
             MiniAutonomo.setCategoria();
+            setEncuentros(MiniAutonomo);
             break;
         default:
             cout << "Opcion invalida, prueba otra vez: " << endl;
@@ -54,22 +56,23 @@ void Torneo::mostrarCategoria(int numCategoria){
         }
 
 }
-void Torneo::setEncuentros()
+void Torneo::setEncuentros(Categoria& categoriaActiva)
 {
     bool correcto{false};
 
     do{
-            //system("cls");
+            system("cls");
             cout << "\nElige el sistema de organizacion de encuentros que deseas implementar: \n"
                  << "1.-Eliminacion directa\n"
                  << "2.-Por grupos (Round Robin)\n" ;
-                cin >> opcionEncuentro;
-                cout << endl << endl;
+            cin >> opcionEncuentro;
+            cout << endl << endl;
 
                 switch(opcionEncuentro){
                     case 1:
                         {
-                        MiniRC.eliminacionDirecta();
+                        categoriaActiva.setByes();
+                        categoriaActiva.eliminacionDirecta();
                         correcto = true;
                         break;
                         }
