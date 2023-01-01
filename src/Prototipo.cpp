@@ -17,7 +17,7 @@ Prototipo::~Prototipo()
 void Prototipo::setPrototipo(int ID_prototipo)
 {
     this->ID_prototipo=ID_prototipo;
-    cin.ignore();
+    fflush(stdin);
     cout << "\nNombre: ";
 
     getline(cin,nombrePrototipo);

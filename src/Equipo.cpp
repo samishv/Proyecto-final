@@ -15,7 +15,7 @@ Equipo::~Equipo()
 void Equipo::setEquipo(int contProtipos)
 {
     this->contPrototipos=contProtipos;
-    cin.ignore();
+    fflush(stdin);
     cout << "\nNombre del equipo: ";
     getline(cin,nombreEquipo);
 

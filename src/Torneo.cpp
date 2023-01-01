@@ -25,7 +25,7 @@ void Torneo::setTorneo(){
     cout << "\nElige la categoria a registrar:\n"
              << "1.-Minisumo RC\n"
              << "2.-Minisumo autonomo" << endl;
-        cin >> numCategoria;
+    cin >> numCategoria;
 
         switch(numCategoria){
         case 1:
@@ -65,8 +65,8 @@ void Torneo::setEncuentros(Categoria& categoriaActiva)
             cout << "\nElige el sistema de organizacion de encuentros que deseas implementar: \n"
                  << "1.-Eliminacion directa\n"
                  << "2.-Por grupos (Round Robin)\n" ;
-                cin >> opcionEncuentro;
-                cout << endl << endl;
+            cin >> opcionEncuentro;
+            cout << endl << endl;
 
                 switch(opcionEncuentro){
                     case 1:
