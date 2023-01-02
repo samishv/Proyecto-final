@@ -27,10 +27,10 @@ void Categoria::setCategoria()
         cout << "Ingrese la cantidad de equipos que participaran: ";
         cin >> numEquipos;
 
-        if(numEquipos<4){
+        if(numEquipos<0){
             cout << "Cantidad Incorrecta. Ingrese nuevamente.\n" << endl;
         }
-    }while(numEquipos<4);
+    }while(numEquipos<0);
 
     EQUIPOS = new Equipo[numEquipos];
 

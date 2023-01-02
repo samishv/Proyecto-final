@@ -33,6 +33,8 @@ class Categoria
         string getInfoPrototipo(int,int);
         void elimDirecta(Categoria&);
         void setByes();
+        inline void setTotalPrototipos(int total){totalPrototipos = total;}
+        inline int getTotalPrototipos(){return totalPrototipos;}
 
 
     protected:

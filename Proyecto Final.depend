@@ -207,7 +207,7 @@
 1672191118 c:\users\emilio\desktop\proyecto-final\include\integrantes.h
 	<string>
 
-1672546916 c:\users\emilio\desktop\proyecto-final\include\categoria.h
+1672699418 c:\users\emilio\desktop\proyecto-final\include\categoria.h
 	"Equipo.h"
 	"Enfrentamientos.h"
 	<string>
@@ -233,18 +233,19 @@
 	<iostream>
 	<sstream>
 
-1672538456 source:c:\users\emilio\desktop\proyecto-final\src\prototipo.cpp
+1672547414 source:c:\users\emilio\desktop\proyecto-final\src\prototipo.cpp
 	"Prototipo.h"
 	<iostream>
 	<string>
 	<sstream>
 
-1672547370 source:c:\users\emilio\desktop\proyecto-final\src\torneo.cpp
+1672701016 source:c:\users\emilio\desktop\proyecto-final\src\torneo.cpp
 	"Torneo.h"
+	"Categoria.h"
 	<string>
 	<iostream>
 
-1672547370 source:c:\users\emilio\desktop\proyecto-final\src\categoria.cpp
+1672698576 source:c:\users\emilio\desktop\proyecto-final\src\categoria.cpp
 	"Categoria.h"
 	"EliminacionDirecta.h"
 	<iostream>
