@@ -34,18 +34,12 @@ void Prototipo::setPrototipo(int ID_prototipo)
 
 }
 
-string Prototipo::getPrototipo()
+void Prototipo::mostrarPrototipo()
 {
-    ostringstream salidaPrototipo;
-
-
-
-    salidaPrototipo << "\nPrototipo: " << nombrePrototipo;
+    cout << "\nPrototipo: " << nombrePrototipo;
 
     for(int i{0}; i < numeroIntegrantes; i++){
-                cout << (INTEGRANTES + i)->getIntegrantes();
-        }
-
-    return salidaPrototipo.str();
+        cout << "\nIntegrante: " << (INTEGRANTES + i)->getIntegrantes();
+    }
 }
 

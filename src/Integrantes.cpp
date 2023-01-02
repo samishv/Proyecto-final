@@ -18,15 +18,12 @@ void Integrantes::setIntegrante()
     cout << "\nNombre: ";
 
     getline(cin,nombreIntegrante);
-
-
-
 }
 
 string Integrantes::getIntegrantes()
 {
     ostringstream salidaIntegrantes;
-    salidaIntegrantes << "\nIntegrante: " << nombreIntegrante;
+    salidaIntegrantes << nombreIntegrante;
     return salidaIntegrantes.str();
 }
 

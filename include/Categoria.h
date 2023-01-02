@@ -5,7 +5,6 @@
 #include <string>
 
 class Categoria
-
 {
 
     private:
@@ -15,27 +14,29 @@ class Categoria
         int byesRestantes;
         int numPrototipos;
         int contPrototipos{0};
-        int *BYES;
         int numRondas;
+        int *BYES;
         int numEnfrentamientos;
         int numParticipantes;
         Equipo *EQUIPOS;
         Enfrentamientos *ENFRENTAMIENTOS;
         string nombreElegido;
         string *NOMBREPARTICIPANTES;
+        friend class EliminacionDirecta;
 
 
     public:
         Categoria();
         virtual ~Categoria();
         void setCategoria();
-        string getCategoria();
+        void mostrarCategoria();
         string getInfoPrototipo(int,int);
-        void eliminacionDirecta();
+        void elimDirecta(Categoria&);
         void setByes();
 
 
     protected:
+
 
 
 };

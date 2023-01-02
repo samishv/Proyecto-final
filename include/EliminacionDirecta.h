@@ -16,11 +16,13 @@ class EliminacionDirecta
         int numPrototipos;
 
     public:
+        EliminacionDirecta();
         EliminacionDirecta(int,int);
         virtual ~EliminacionDirecta();
         int prueba2n();
         void asignaByes();
         inline void setByes(){this->numByes=prueba2n();}
+        void eliminacionDirecta(Categoria&);
 
     protected:
 
