@@ -113,3 +113,77 @@
 1672475618 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\enfrentamientos.h
 	<string>
 
+1672526040 source:c:\users\emilio\downloads\proyecto final\main.cpp
+	<iostream>
+	"Torneo.h"
+
+1672527702 c:\users\emilio\downloads\proyecto final\include\torneo.h
+	"EliminacionDirecta.h"
+	"Categoria.h"
+
+1672533270 c:\users\emilio\downloads\proyecto final\include\eliminaciondirecta.h
+	"Prototipo.h"
+	"Categoria.h"
+	"Torneo.h"
+
+1672384680 c:\users\emilio\downloads\proyecto final\include\prototipo.h
+	"Integrantes.h"
+	<string>
+
+1672191118 c:\users\emilio\downloads\proyecto final\include\integrantes.h
+	<string>
+
+1672533270 c:\users\emilio\downloads\proyecto final\include\categoria.h
+	"Equipo.h"
+	"Enfrentamientos.h"
+	<string>
+
+1672439826 c:\users\emilio\downloads\proyecto final\include\equipo.h
+	"Prototipo.h"
+	<string>
+
+1672475620 c:\users\emilio\downloads\proyecto final\include\enfrentamientos.h
+	<string>
+
+1672533270 source:c:\users\emilio\downloads\proyecto final\src\eliminaciondirecta.cpp
+	"EliminacionDirecta.h"
+	<iostream>
+	<chrono>
+	<random>
+	<windows.h>
+
+1672538400 source:c:\users\emilio\downloads\proyecto final\src\equipo.cpp
+	"Equipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672350506 source:c:\users\emilio\downloads\proyecto final\src\integrantes.cpp
+	"Integrantes.h"
+	<iostream>
+	<sstream>
+
+1672538166 source:c:\users\emilio\downloads\proyecto final\src\prototipo.cpp
+	"Prototipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672536528 source:c:\users\emilio\downloads\proyecto final\src\torneo.cpp
+	"Torneo.h"
+	<string>
+	<iostream>
+
+1672537298 source:c:\users\emilio\downloads\proyecto final\src\categoria.cpp
+	"Categoria.h"
+	<iostream>
+	<sstream>
+	<string>
+	<chrono>
+	<random>
+	<windows.h>
+	<vector>
+
+1672472054 source:c:\users\emilio\downloads\proyecto final\src\enfrentamientos.cpp
+	"Enfrentamientos.h"
+
