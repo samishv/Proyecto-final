@@ -47,7 +47,7 @@
 1672191117 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\integrantes.h
 	<string>
 
-1672384678 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\prototipo.cpp
+1672678986 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\prototipo.cpp
 	"Prototipo.h"
 	<iostream>
 	<string>
@@ -86,23 +86,23 @@
 	"Prototipo.h"
 	<string>
 
-1672533268 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
+1672678986 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
 	"Categoria.h"
 	<iostream>
 	<sstream>
-	<string.h>
+	<string>
 	<chrono>
 	<random>
 	<windows.h>
 	<vector>
 
-1672439747 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\equipo.cpp
+1672678986 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\equipo.cpp
 	"Equipo.h"
 	<iostream>
 	<string>
 	<sstream>
 
-1672533268 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\torneo.cpp
+1672536526 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\torneo.cpp
 	"Torneo.h"
 	<string>
 	<iostream>

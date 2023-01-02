@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1672526038 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\main.cpp
+	<iostream>
+	"Torneo.h"
+
+1672527701 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\torneo.h
+	"EliminacionDirecta.h"
+	"Categoria.h"
+
+1672533268 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\eliminaciondirecta.h
+	"Prototipo.h"
+	"Categoria.h"
+	"Torneo.h"
+
+1672384678 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\prototipo.h
+	"Integrantes.h"
+	<string>
+
+1672191117 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\integrantes.h
+	<string>
+
+1672533268 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
+	"Equipo.h"
+	"Enfrentamientos.h"
+	<string>
+
+1672439824 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\equipo.h
+	"Prototipo.h"
+	<string>
+
+1672475618 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\enfrentamientos.h
+	<string>
+
+1672678986 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
+	"Categoria.h"
+	<iostream>
+	<sstream>
+	<string>
+	<chrono>
+	<random>
+	<windows.h>
+	<vector>
+
+1672472052 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\enfrentamientos.cpp
+	"Enfrentamientos.h"
+
+1672678986 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\equipo.cpp
+	"Equipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672350505 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\integrantes.cpp
+	"Integrantes.h"
+	<iostream>
+	<sstream>
+
+1672678986 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\prototipo.cpp
+	"Prototipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672536526 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\torneo.cpp
+	"Torneo.h"
+	<string>
+	<iostream>
+
