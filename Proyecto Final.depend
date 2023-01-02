@@ -57,14 +57,14 @@
 	"Integrantes.h"
 	<string>
 
-1672348669 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\eliminaciondirecta.cpp
+1672533268 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\eliminaciondirecta.cpp
 	"EliminacionDirecta.h"
 	<iostream>
 	<chrono>
 	<random>
 	<windows.h>
 
-1672348527 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\eliminaciondirecta.h
+1672533268 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\eliminaciondirecta.h
 	"Prototipo.h"
 	"Categoria.h"
 	"Torneo.h"
@@ -77,7 +77,7 @@
 	"EliminacionDirecta.h"
 	"Categoria.h"
 
-1672528191 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
+1672533268 c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\include\categoria.h
 	"Equipo.h"
 	"Enfrentamientos.h"
 	<string>
@@ -86,7 +86,7 @@
 	"Prototipo.h"
 	<string>
 
-1672523448 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
+1672533268 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\categoria.cpp
 	"Categoria.h"
 	<iostream>
 	<sstream>
@@ -102,7 +102,7 @@
 	<string>
 	<sstream>
 
-1672526174 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\torneo.cpp
+1672533268 source:c:\users\ikerf\desktop\upiita\3er semestre\poo\proyecto final\src\torneo.cpp
 	"Torneo.h"
 	<string>
 	<iostream>
