@@ -1,4 +1,5 @@
 #include "Categoria.h"
+#include "EliminacionDirecta.h"
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -22,8 +23,15 @@ Categoria::~Categoria()
 
 void Categoria::setCategoria()
 {
-    cout << "Ingrese la cantidad de equipos que participaran: ";
-    cin >> numEquipos;
+    do{
+        cout << "Ingrese la cantidad de equipos que participaran: ";
+        cin >> numEquipos;
+
+        if(numEquipos<4){
+            cout << "Cantidad Incorrecta. Ingrese nuevamente.\n" << endl;
+        }
+    }while(numEquipos<4);
+
     EQUIPOS = new Equipo[numEquipos];
 
     for(int i{0}; i < numEquipos; i++){
@@ -36,179 +44,29 @@ void Categoria::setCategoria()
     cout << totalPrototipos << endl;
 }
 
-string Categoria::getCategoria()
+void Categoria::mostrarCategoria()
 {
-    ostringstream salida;
-
     for(int i{0}; i < numEquipos; i++){
-        cout << (EQUIPOS + i)->getEquipos();
-
+        (EQUIPOS + i)->mostrarEquipos();
     }
-    return salida.str();
 }
 
 
 string Categoria::getInfoPrototipo(int posicion,int posicionPrototipo)
 {
     ostringstream salida;
-        cout << (EQUIPOS + posicion)->getEquipo(posicionPrototipo);
+        salida << (EQUIPOS + posicion)->getEquipo(posicionPrototipo);
 
 
     return salida.str();
 }
 
-
-
-void Categoria::eliminacionDirecta()
+void Categoria::elimDirecta(Categoria& Categ)
 {
-    int ganadorEnfrentamiento, participante;
-    int elegido,IDElegido,*PARTICIPANTES, bandera,numEnfrentamiento;
-    int pos{0};
-    string nombreCompetidorRojo,nombreCompetidorAzul;
-    bool unique {false};
-    bool nuevoEnfrentamiento {true};
-
-
-
-    // Asigna los enfrentamientos
-
-    pos=0;
-    numRondas=totalPrototipos-1;
-    numParticipantes=totalPrototipos-byes;
-    PARTICIPANTES= new int[numParticipantes];
-
-    numEnfrentamientos=numParticipantes/2;
-
-    ENFRENTAMIENTOS = new Enfrentamientos[numEnfrentamientos];
-    numEnfrentamiento=0;
-
-
-    while(numParticipantes!=0){
-
-        for(int i=0;i<numEquipos;i++){
-
-                numPrototipos=(EQUIPOS + i)->getnumPrototipos();
-                bandera = 0;
-
-                do{
-
-                    unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();
-                    default_random_engine motorG(semilla);
-                    uniform_int_distribution<int> participante(0,numPrototipos-1);
-
-                    elegido=participante(motorG);
-                    IDElegido=(EQUIPOS + i)->getEquipo(elegido);
-                    PARTICIPANTES[pos]=IDElegido;
-                    unique=true;
-                    for(int j=0; j<pos; j++){
-
-                        if(PARTICIPANTES[j]==IDElegido){
-                            unique=false;
-                        }
-
-                    }
-
-                    for(int j=0; j<byes; j++){
-
-                        if(BYES[j]==IDElegido){
-                            unique=false;
-                        }
-                    }
-
-                    bandera ++;
-
-                }while(!unique && bandera<=numPrototipos);
-
-                if(bandera>numPrototipos){
-                    continue;
-                }
-
-                nombreElegido=(EQUIPOS + i)->getInfoPrototipo(elegido);
-                pos ++;
-
-                if(nuevoEnfrentamiento){
-                    (ENFRENTAMIENTOS+numEnfrentamiento)->setCompetidorRojo(nombreElegido,IDElegido);
-                    nuevoEnfrentamiento=false;
-                }else{
-                     (ENFRENTAMIENTOS+numEnfrentamiento)->setCompetidorAzul(nombreElegido,IDElegido);
-                      nuevoEnfrentamiento=true;
-                      numEnfrentamiento++;
-                     }
-
-                numParticipantes--;
-
-                if(numParticipantes==0){
-                    break;
-                }
-
-        }
-
+    EliminacionDirecta Eliminar{};
+    Eliminar.eliminacionDirecta(Categ);
 }
 
-              for(int i=0; i<numEnfrentamientos; i++){
-
-                    cout << "\nENFRENTAMIENTO " << i+1 << ": "
-                        << (ENFRENTAMIENTOS+i)->getNombreCompetidorRojo() << " vs " << (ENFRENTAMIENTOS+i)->getNombreCompetidorAzul() << endl;
-
-              }
-
-
-             for(int i =2; i<numRondas; i++){
-
-                    numParticipantes=byes+numEnfrentamientos;
-
-                    for(int j=byes; j<numParticipantes; j++){
-
-                            nombreCompetidorRojo=(ENFRENTAMIENTOS+j-byes)->getNombreCompetidorRojo();
-                            nombreCompetidorAzul=(ENFRENTAMIENTOS+j-byes)->getNombreCompetidorAzul();
-
-
-                            cout << "\nSeleccione el ganador del enfrentamiento " << j-byes+1 << ": "
-                                 << "\n1. " << nombreCompetidorRojo
-                                 << "\n2. " << nombreCompetidorAzul << endl;
-
-                            cin>>ganadorEnfrentamiento;
-                            cout << endl << endl;
-
-                            switch(ganadorEnfrentamiento){
-                                case 1:
-                                    cout << "Ganador: " << nombreCompetidorRojo << endl;
-                                    NOMBREPARTICIPANTES[j]=nombreCompetidorRojo;
-                                    break;
-
-                                case 2:
-                                    cout << "Ganador: " << nombreCompetidorAzul << endl;
-                                    NOMBREPARTICIPANTES[j]=nombreCompetidorAzul;
-                                    break;
-                                default:
-                                    cout << "Opcion invalida, prueba otra vez: " << endl;
-                    }
-            }
-
-            byes=0;
-
-            delete[] ENFRENTAMIENTOS;
-            numEnfrentamientos=numParticipantes/2;
-            ENFRENTAMIENTOS=new Enfrentamientos[numEnfrentamientos];
-            participante=0;
-            for(int j=0; j<numEnfrentamientos; j++){
-
-                (ENFRENTAMIENTOS+j)->setCompetidorRojo(NOMBREPARTICIPANTES[participante]);
-                participante ++;
-                (ENFRENTAMIENTOS+j)->setCompetidorAzul(NOMBREPARTICIPANTES[participante]);
-                participante ++;
-            }
-
-            for(int j=0; j<numEnfrentamientos; j++){
-
-                    cout << "\nENFRENTAMIENTO " << j+1 << ": "
-                        << (ENFRENTAMIENTOS+j)->getNombreCompetidorRojo() << " vs " << (ENFRENTAMIENTOS+j)->getNombreCompetidorAzul() << endl;
-
-              }
-
-    }
-
-}
 
 void Categoria::setByes()
 {
