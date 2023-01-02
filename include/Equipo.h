@@ -15,7 +15,7 @@ class Equipo
         Equipo();
         virtual ~Equipo();
         void setEquipo(int);
-        string getEquipos();
+        void mostrarEquipos();
         int getEquipo(int);
         inline int getnumPrototipos(){return numPrototipos;}
         string getInfoPrototipo(int);

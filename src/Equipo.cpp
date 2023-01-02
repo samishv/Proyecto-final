@@ -31,18 +31,14 @@ void Equipo::setEquipo(int contProtipos)
         this->contPrototipos ++;
     }
 }
-string Equipo::getEquipos()
-{
-    ostringstream salidaEquipos;
 
-    salidaEquipos << "\nEquipo: " << nombreEquipo;
+void Equipo::mostrarEquipos()
+{
+    cout << "\nEquipo: " << nombreEquipo;
 
     for(int i{0}; i < numPrototipos; i++){
-                cout << (PROTOTIPOS + i)->getPrototipo();
-        }
-
-
-    return salidaEquipos.str();
+        (PROTOTIPOS + i)->mostrarPrototipo();
+    }
 }
 
 int Equipo::getEquipo(int posicionPrototipo)

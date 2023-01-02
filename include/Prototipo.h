@@ -15,7 +15,7 @@ class Prototipo
         Prototipo();
         virtual ~Prototipo();
         void setPrototipo(int);
-        string getPrototipo();
+        void mostrarPrototipo();
         inline string getNombrePrototipo(){return nombrePrototipo;}
         inline int getIDPrototipo(){return ID_prototipo;}
 
