@@ -1,7 +1,7 @@
 #include "Categoria.h"
 #include <iostream>
 #include <sstream>
-#include <string.h>
+#include <string>
 #include <chrono>
 #include <random>
 #include <windows.h>
