@@ -32,7 +32,14 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="SFML/include" />
 		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="SFML/lib" />
+		</Linker>
 		<Unit filename="include/Categoria.h" />
 		<Unit filename="include/EliminacionDirecta.h" />
 		<Unit filename="include/Enfrentamientos.h" />
