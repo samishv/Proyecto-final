@@ -22,6 +22,8 @@ class Categoria
         Enfrentamientos *ENFRENTAMIENTOS;
         string nombreElegido;
         string *NOMBREPARTICIPANTES;
+        string TERCEROS[2];
+        string GANADORES[3];
         friend class EliminacionDirecta;
 
 

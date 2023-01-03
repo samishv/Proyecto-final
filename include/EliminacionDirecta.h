@@ -15,6 +15,7 @@ class EliminacionDirecta
         int numByes;
         int numPrototipos;
 
+
     public:
         EliminacionDirecta();
         EliminacionDirecta(int,int);
@@ -23,6 +24,7 @@ class EliminacionDirecta
         void asignaByes();
         inline void setByes(){this->numByes=prueba2n();}
         void eliminacionDirecta(Categoria&);
+        void setGanadores();
 
     protected:
 

@@ -52,6 +52,7 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
     // Asigna los enfrentamientos
 
     pos=0;
+
     Categ.numRondas = Categ.totalPrototipos-1;
     Categ.numParticipantes = Categ.totalPrototipos - Categ.byes;
     PARTICIPANTES= new int[Categ.numParticipantes];
@@ -131,18 +132,27 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
     }
 
 
-    for(int i =2; i<Categ.numRondas; i++){
+    // Rondas a partir de la segunda
+    for(int i =2; i<=(Categ.numRondas+1); i++){
 
-        Categ.numParticipantes=Categ.byes+Categ.numEnfrentamientos;
+        if(i==(Categ.numRondas+1)){
+            Categ.numParticipantes=1;
+        }else{
+            Categ.numParticipantes=Categ.byes+Categ.numEnfrentamientos;
+        }
 
         for(int j=Categ.byes; j<Categ.numParticipantes; j++){
 
             nombreCompetidorRojo=(Categ.ENFRENTAMIENTOS+j-Categ.byes)->getNombreCompetidorRojo();
             nombreCompetidorAzul=(Categ.ENFRENTAMIENTOS+j-Categ.byes)->getNombreCompetidorAzul();
 
+            if(i==(Categ.numRondas+1)){
+                cout << "\nSeleccione el ganador del tercer lugar : " << endl;
+            }else{
+                cout << "\nSeleccione el ganador del enfrentamiento " << j-Categ.byes+1 << ": " << endl;
+            }
 
-            cout << "\nSeleccione el ganador del enfrentamiento " << j-Categ.byes+1 << ": "
-                 << "\n1. " << nombreCompetidorRojo
+            cout << "\n1. " << nombreCompetidorRojo
                  << "\n2. " << nombreCompetidorAzul << endl;
 
             cin>>ganadorEnfrentamiento;
@@ -151,12 +161,52 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
             switch(ganadorEnfrentamiento){
             case 1:
                 cout << "Ganador: " << nombreCompetidorRojo << endl;
-                Categ.NOMBREPARTICIPANTES[j]=nombreCompetidorRojo;
+                //Dependiendo de la ronda, guarda a los ganadores
+                if(i==(Categ.numRondas-1)){
+                    Categ.TERCEROS[j]=nombreCompetidorAzul;
+                    Categ.NOMBREPARTICIPANTES[j]=nombreCompetidorRojo;
+                }else if(i==(Categ.numRondas)){
+                    Categ.GANADORES[0]=nombreCompetidorRojo;
+                    Categ.GANADORES[1]=nombreCompetidorAzul;
+                    Categ.NOMBREPARTICIPANTES[0]=Categ.TERCEROS[0];
+                    Categ.NOMBREPARTICIPANTES[1]=Categ.TERCEROS[1];
+                }else{
+                    Categ.NOMBREPARTICIPANTES[j]=nombreCompetidorRojo;
+                }
+                if(i==(Categ.numRondas+1)){
+                    Categ.GANADORES[2]=nombreCompetidorRojo;
+                }
+
                 break;
 
             case 2:
                 cout << "Ganador: " << nombreCompetidorAzul << endl;
-                Categ.NOMBREPARTICIPANTES[j]=nombreCompetidorAzul;
+                if(i==(Categ.numRondas-1)){
+                    Categ.TERCEROS[j]=nombreCompetidorRojo;
+                    Categ.NOMBREPARTICIPANTES[j]=nombreCompetidorAzul;
+                    for(int j=0; j<2; j++){
+
+                        cout << Categ.TERCEROS[j] << endl;
+
+                    }
+                }else if(i==(Categ.numRondas)){
+                    Categ.GANADORES[0]=nombreCompetidorAzul;
+                    Categ.GANADORES[1]=nombreCompetidorRojo;
+                    Categ.NOMBREPARTICIPANTES[0]=Categ.TERCEROS[0];
+                    Categ.NOMBREPARTICIPANTES[1]=Categ.TERCEROS[1];
+                    for(int j=0; j<2; j++){
+
+                        cout << Categ.NOMBREPARTICIPANTES[j] << endl;
+
+                    }
+                }else{
+                    Categ.NOMBREPARTICIPANTES[j]=nombreCompetidorAzul;
+                }
+
+                if(i==(Categ.numRondas+1)){
+                    Categ.GANADORES[2]=nombreCompetidorAzul;
+                }
+
                 break;
             default:
                 cout << "Opcion invalida, prueba otra vez: " << endl;
@@ -167,7 +217,14 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
 
         delete[] Categ.ENFRENTAMIENTOS;
 
-        Categ.numEnfrentamientos=Categ.numParticipantes/2;
+        if(i==(Categ.numRondas)){
+            Categ.numEnfrentamientos=1;
+        }else if(i==(Categ.numRondas+1)){
+            Categ.numEnfrentamientos=1;
+        }else{
+            Categ.numEnfrentamientos=Categ.numParticipantes/2;
+        }
+
         Categ.ENFRENTAMIENTOS=new Enfrentamientos[Categ.numEnfrentamientos];
         participante=0;
         for(int j=0; j<Categ.numEnfrentamientos; j++){
@@ -186,6 +243,13 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
         }
 
     }
+
+        for(int j=0; j<3; j++){
+
+            cout << "\nGANADOR " << j+1 << "° lugar: "
+                 << Categ.GANADORES[j] << endl;
+        }
+
 
 }
 
