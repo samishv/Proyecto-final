@@ -27,10 +27,17 @@ void Categoria::setCategoria()
         cout << "Ingrese la cantidad de equipos que participaran: ";
         cin >> numEquipos;
 
+<<<<<<< HEAD
+        if(numEquipos<0){
+            cout << "Cantidad Incorrecta. Ingrese nuevamente.\n" << endl;
+        }
+    }while(numEquipos<0);
+=======
         if(numEquipos<1){
             cout << "Cantidad Incorrecta. Ingrese nuevamente.\n" << endl;
         }
     }while(numEquipos<1);
+>>>>>>> RamaID
 
     EQUIPOS = new Equipo[numEquipos];
 

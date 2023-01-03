@@ -1,4 +1,5 @@
 #include "Torneo.h"
+#include "Categoria.h"
 #include <string>
 #include <iostream>
 
@@ -27,18 +28,34 @@ void Torneo::setTorneo(){
              << "2.-Minisumo autonomo" << endl;
     cin >> numCategoria;
 
+    do{
         switch(numCategoria){
         case 1:
             MiniRC.setCategoria();
+            if(!(MiniRC.getTotalPrototipos()>3)){
+                cout << "\nMinimo de prototipos totales 4 no alcanzado" << endl;
+                system("pause");
+                system("cls");
+                MiniRC.setTotalPrototipos(0);
+                break;
+            }
             setEncuentros(MiniRC);
             break;
         case 2:
             MiniAutonomo.setCategoria();
+            if(!(MiniAutonomo.getTotalPrototipos()>3)){
+                cout << "\nMinimo de prototipos totales 4 no alcanzado" << endl;
+                system("pause");
+                system("cls");
+                MiniAutonomo.setTotalPrototipos(0);
+                break;
+            }
             setEncuentros(MiniAutonomo);
             break;
         default:
             cout << "Opcion invalida, prueba otra vez: " << endl;
         }
+    }while(!(MiniRC.getTotalPrototipos()>3) || !(MiniAutonomo.getTotalPrototipos()>3));
 }
 
 void Torneo::mostrarCategoria(int numCategoria)
