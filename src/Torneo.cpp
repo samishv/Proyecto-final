@@ -16,6 +16,7 @@ Torneo::~Torneo()
 }
 
 void Torneo::setTorneo(){
+    bool correcto{false};
     //Se elige la categoría a registrar
 
 
@@ -39,6 +40,7 @@ void Torneo::setTorneo(){
                 MiniRC.setTotalPrototipos(0);
                 break;
             }
+            correcto = true;
             setEncuentros(MiniRC);
             break;
         case 2:
@@ -50,12 +52,13 @@ void Torneo::setTorneo(){
                 MiniAutonomo.setTotalPrototipos(0);
                 break;
             }
+            correcto = true;
             setEncuentros(MiniAutonomo);
             break;
         default:
             cout << "Opcion invalida, prueba otra vez: " << endl;
         }
-    }while(!(MiniRC.getTotalPrototipos()>3) || !(MiniAutonomo.getTotalPrototipos()>3));
+    }while(!correcto);
 }
 
 void Torneo::mostrarCategoria(int numCategoria)
