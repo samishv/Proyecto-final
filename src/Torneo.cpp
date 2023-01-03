@@ -32,6 +32,10 @@ void Torneo::setTorneo(){
     do{
         switch(numCategoria){
         case 1:
+            cout << "\nCategoría disponible para:\n"
+                 << "\n4 o mas prototipos en eliminacion directa\n"
+                 << "\n6 o mas prototipos en Round Robin\n";
+            system("pause");
             MiniRC.setCategoria();
             if(!(MiniRC.getTotalPrototipos()>3)){
                 cout << "\nMinimo de prototipos totales 4 no alcanzado" << endl;
@@ -44,6 +48,10 @@ void Torneo::setTorneo(){
             setEncuentros(MiniRC);
             break;
         case 2:
+            cout << "\nCategoría disponible para:\n"
+                 << "\n4 o mas prototipos en eliminacion directa\n"
+                 << "\n6 o mas prototipos en Round Robin\n";
+            system("pause");
             MiniAutonomo.setCategoria();
             if(!(MiniAutonomo.getTotalPrototipos()>3)){
                 cout << "\nMinimo de prototipos totales 4 no alcanzado" << endl;
