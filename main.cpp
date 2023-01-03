@@ -41,7 +41,7 @@ int main()
         }while(activo);
 
         cout << "\nSalir (S)"
-             << "\nIngresar nuevo grupo (N)" << endl;
+             << "\nIngresar nueva categoria (N)" << endl;
         cin >> accion;
         accion = tolower(accion);
         if(accion == 'n'){

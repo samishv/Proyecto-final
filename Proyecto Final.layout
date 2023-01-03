@@ -2,7 +2,16 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
 	<File name="src\Integrantes.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+<<<<<<< HEAD
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="22" />
+=======
+	<File name="include\EliminacionDirecta.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> RamaID
 		<Cursor>
 			<Cursor1 position="397" topLine="0" />
 		</Cursor>
@@ -35,11 +44,32 @@
 	<File name="src\Equipo.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="887" topLine="13" />
+>>>>>>> 1954efd1f17f50ad077adcf6b54b15e0aab93d84
 		</Cursor>
 	</File>
 	<File name="include\Prototipo.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="371" topLine="0" />
+=======
+<<<<<<< HEAD
+			<Cursor1 position="0" topLine="157" />
+		</Cursor>
+	</File>
+	<File name="include\Categoria.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="91" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Prototipo.cpp" open="1" top="1" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="286" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="include\Equipo.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+			<Cursor1 position="1050" topLine="32" />
+>>>>>>> RamaID
 		</Cursor>
 	</File>
 	<File name="src\Torneo.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -53,10 +83,12 @@
 		</Cursor>
 	</File>
 	<File name="src\Enfrentamientos.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> 1954efd1f17f50ad077adcf6b54b15e0aab93d84
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="include\Equipo.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="343" topLine="0" />
@@ -70,6 +102,17 @@
 	<File name="include\Integrantes.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="298" topLine="0" />
+=======
+<<<<<<< HEAD
+	<File name="src\Equipo.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="243" topLine="0" />
+=======
+	<File name="src\EliminacionDirecta.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5644" topLine="149" />
+>>>>>>> 1954efd1f17f50ad077adcf6b54b15e0aab93d84
+>>>>>>> RamaID
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
