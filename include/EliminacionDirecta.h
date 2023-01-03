@@ -3,6 +3,7 @@
 #include "Prototipo.h"
 #include "Categoria.h"
 #include "Torneo.h"
+#include "Grupo.h"
 
 
 class EliminacionDirecta
@@ -14,6 +15,8 @@ class EliminacionDirecta
         Prototipo *BYES;
         int numByes;
         int numPrototipos;
+        Grupo *GRUPOS3;
+        Grupo *GRUPOS4;
 
 
     public:
@@ -24,7 +27,7 @@ class EliminacionDirecta
         void asignaByes();
         inline void setByes(){this->numByes=prueba2n();}
         void eliminacionDirecta(Categoria&);
-        void setGanadores();
+        void roundRobin(Categoria&);
 
     protected:
 

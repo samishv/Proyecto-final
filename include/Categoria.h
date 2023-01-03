@@ -34,6 +34,7 @@ class Categoria
         void mostrarCategoria();
         string getInfoPrototipo(int,int);
         void elimDirecta(Categoria&);
+        void elimRobin(Categoria&);
         void setByes();
         inline void setTotalPrototipos(int total){totalPrototipos = total;}
         inline int getTotalPrototipos(){return totalPrototipos;}

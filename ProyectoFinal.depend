@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1672708329 source:c:\users\emilio\desktop\proyecto-final\main.cpp
+1672777123 source:c:\users\emilio\desktop\proyecto-final\main.cpp
 	<iostream>
 	"Torneo.h"
 
@@ -7,10 +7,11 @@
 	"EliminacionDirecta.h"
 	"Categoria.h"
 
-1672708329 c:\users\emilio\desktop\proyecto-final\include\eliminaciondirecta.h
+1672785810 c:\users\emilio\desktop\proyecto-final\include\eliminaciondirecta.h
 	"Prototipo.h"
 	"Categoria.h"
 	"Torneo.h"
+	"Grupo.h"
 
 1672547370 c:\users\emilio\desktop\proyecto-final\include\prototipo.h
 	"Integrantes.h"
@@ -19,7 +20,7 @@
 1672191118 c:\users\emilio\desktop\proyecto-final\include\integrantes.h
 	<string>
 
-1672708329 c:\users\emilio\desktop\proyecto-final\include\categoria.h
+1672718241 c:\users\emilio\desktop\proyecto-final\include\categoria.h
 	"Equipo.h"
 	"Enfrentamientos.h"
 	<string>
@@ -31,7 +32,7 @@
 1672475620 c:\users\emilio\desktop\proyecto-final\include\enfrentamientos.h
 	<string>
 
-1672708473 source:c:\users\emilio\desktop\proyecto-final\src\categoria.cpp
+1672767878 source:c:\users\emilio\desktop\proyecto-final\src\categoria.cpp
 	"Categoria.h"
 	"EliminacionDirecta.h"
 	<iostream>
@@ -42,7 +43,7 @@
 	<windows.h>
 	<vector>
 
-1672708329 source:c:\users\emilio\desktop\proyecto-final\src\eliminaciondirecta.cpp
+1672772536 source:c:\users\emilio\desktop\proyecto-final\src\eliminaciondirecta.cpp
 	"EliminacionDirecta.h"
 	<iostream>
 	<chrono>
@@ -52,26 +53,33 @@
 1672472054 source:c:\users\emilio\desktop\proyecto-final\src\enfrentamientos.cpp
 	"Enfrentamientos.h"
 
-1672547405 source:c:\users\emilio\desktop\proyecto-final\src\equipo.cpp
+1672767878 source:c:\users\emilio\desktop\proyecto-final\src\equipo.cpp
 	"Equipo.h"
 	<iostream>
 	<string>
 	<sstream>
 
-1672547370 source:c:\users\emilio\desktop\proyecto-final\src\integrantes.cpp
+1672763163 source:c:\users\emilio\desktop\proyecto-final\src\integrantes.cpp
 	"Integrantes.h"
 	<iostream>
 	<sstream>
 
-1672547414 source:c:\users\emilio\desktop\proyecto-final\src\prototipo.cpp
+1672786841 source:c:\users\emilio\desktop\proyecto-final\src\prototipo.cpp
 	"Prototipo.h"
 	<iostream>
 	<string>
 	<sstream>
 
-1672708444 source:c:\users\emilio\desktop\proyecto-final\src\torneo.cpp
+1672764305 source:c:\users\emilio\desktop\proyecto-final\src\torneo.cpp
 	"Torneo.h"
 	"Categoria.h"
 	<string>
 	<iostream>
+
+1672786841 c:\users\emilio\desktop\proyecto-final\include\grupo.h
+	"Prototipo.h"
+	<string>
+
+1672786850 source:c:\users\emilio\desktop\proyecto-final\src\grupo.cpp
+	"Grupo.h"
 

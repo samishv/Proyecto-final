@@ -68,6 +68,11 @@ void Categoria::elimDirecta(Categoria& Categ)
     Eliminar.eliminacionDirecta(Categ);
 }
 
+void Categoria::elimRobin(Categoria& Categ)
+{
+    EliminacionDirecta Eliminar{};
+    Eliminar.roundRobin(Categ);
+}
 
 void Categoria::setByes()
 {
@@ -147,8 +152,3 @@ void Categoria::setByes()
 
     }
 }
-
-
-
-
-

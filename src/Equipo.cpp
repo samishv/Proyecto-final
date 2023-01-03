@@ -12,6 +12,7 @@ Equipo::~Equipo()
 {
     //dtor
 }
+
 void Equipo::setEquipo(int contProtipos)
 {
     this->contPrototipos=contProtipos;
@@ -43,14 +44,12 @@ void Equipo::mostrarEquipos()
 
 int Equipo::getEquipo(int posicionPrototipo)
 {
-    return(PROTOTIPOS + posicionPrototipo)->getIDPrototipo();
-
+    return (PROTOTIPOS + posicionPrototipo)->getIDPrototipo();
 
 }
 
 string Equipo::getInfoPrototipo(int posicionPrototipo)
 {
-    return(PROTOTIPOS + posicionPrototipo)->getNombrePrototipo();
-
+    return (PROTOTIPOS + posicionPrototipo)->getNombrePrototipo();
 
 }

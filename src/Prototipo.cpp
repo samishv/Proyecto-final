@@ -14,6 +14,7 @@ Prototipo::~Prototipo()
 {
     //dtor
 }
+
 void Prototipo::setPrototipo(int ID_prototipo)
 {
     this->ID_prototipo=ID_prototipo;

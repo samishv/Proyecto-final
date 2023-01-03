@@ -13,6 +13,7 @@ Integrantes::~Integrantes()
 {
     //dtor
 }
+
 void Integrantes::setIntegrante()
 {
     cout << "\nNombre: ";

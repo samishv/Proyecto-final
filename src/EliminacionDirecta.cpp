@@ -44,14 +44,13 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
     int elegido{},IDElegido{},*PARTICIPANTES{}, bandera{},numEnfrentamiento{};
     int pos{0};
     string nombreCompetidorRojo{""},nombreCompetidorAzul{""};
-    bool unique {false};
-    bool nuevoEnfrentamiento {true};
+    bool unique{false};
+    bool nuevoEnfrentamiento{true};
+    bool ultimoEnfrentamiento{false};
 
 
 
     // Asigna los enfrentamientos
-
-    pos=0;
 
     Categ.numRondas = Categ.totalPrototipos-1;
     Categ.numParticipantes = Categ.totalPrototipos - Categ.byes;
@@ -60,7 +59,6 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
     Categ.numEnfrentamientos = Categ.numParticipantes/2;
 
     Categ.ENFRENTAMIENTOS = new Enfrentamientos[Categ.numEnfrentamientos];
-    numEnfrentamiento=0;
 
 
     while(Categ.numParticipantes!=0){
@@ -68,7 +66,6 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
         for(int i=0;i<Categ.numEquipos;i++){
 
             Categ.numPrototipos=(Categ.EQUIPOS + i)->getnumPrototipos();
-            bandera = 0;
 
             do{
                 unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();
@@ -116,10 +113,6 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
 
             Categ.numParticipantes--;
 
-            if(Categ.numParticipantes==0){
-                break;
-            }
-
         }
 
     }
@@ -148,6 +141,7 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
 
             if(i==(Categ.numRondas+1)){
                 cout << "\nSeleccione el ganador del tercer lugar : " << endl;
+                ultimoEnfrentamiento = true;
             }else{
                 cout << "\nSeleccione el ganador del enfrentamiento " << j-Categ.byes+1 << ": " << endl;
             }
@@ -235,21 +229,65 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
             participante ++;
         }
 
-        for(int j=0; j<Categ.numEnfrentamientos; j++){
+        if(!ultimoEnfrentamiento){
+            for(int j=0; j<Categ.numEnfrentamientos; j++){
 
-            cout << "\nENFRENTAMIENTO " << j+1 << ": "
-                 << (Categ.ENFRENTAMIENTOS+j)->getNombreCompetidorRojo() << " vs " << (Categ.ENFRENTAMIENTOS+j)->getNombreCompetidorAzul() << endl;
+                cout << "\nENFRENTAMIENTO " << j+1 << ": "
+                     << (Categ.ENFRENTAMIENTOS+j)->getNombreCompetidorRojo() << " vs " << (Categ.ENFRENTAMIENTOS+j)->getNombreCompetidorAzul() << endl;
 
+            }
         }
-
     }
 
-        for(int j=0; j<3; j++){
+    for(int j=0; j<3; j++){
 
-            cout << "\nGANADOR " << j+1 << "° lugar: "
-                 << Categ.GANADORES[j] << endl;
+        cout << "\nGANADOR " << j+1 << "° lugar: "
+             << Categ.GANADORES[j] << endl;
+    }
+
+
+}
+
+void EliminacionDirecta::roundRobin(Categoria& Categ)
+{
+    int grupos3{}, grupos4{};
+    int prototipo{};
+
+    grupos4 = Categ.totalPrototipos%3;
+    grupos3 = Categ.totalPrototipos/3 - grupos4;
+
+    GRUPOS3 = new Grupo[grupos3];
+    GRUPOS4 = new Grupo[grupos4];
+
+    for(int i=0; i<grupos4; i++){
+        for(int j=0; j<4; j++){
+            GRUPOS4[i].setGrupo(4, prototipo);
+            prototipo += 4;
         }
+    }
+    /*
+    nombreElegido=(EQUIPOS + i)->getInfoPrototipo(elegido);
+    (PROTOTIPOS + i)->setPrototipo(this->contPrototipos);
 
+
+    string *GRUPO1{}, *GRUPO2{};
+    int *PUNTOS1{}, *PUNTOS2{};
+
+    if(Categ.totalPrototipos%2 == 0){
+        GRUPO1 = new string [Categ.totalPrototipos/2];
+        PUNTOS1 = new int [Categ.totalPrototipos/2];
+        GRUPO2 = new string [Categ.totalPrototipos/2];
+        PUNTOS2 = new int [Categ.totalPrototipos/2];
+    }else{
+        GRUPO1 = new string [Categ.totalPrototipos+1/2];
+        PUNTOS1 = new int [Categ.totalPrototipos+1/2];
+        GRUPO2 = new string [Categ.totalPrototipos-1/2];
+        PUNTOS2 = new int [Categ.totalPrototipos-1/2];
+    }
+
+    unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();
+    default_random_engine motorG(semilla);
+    uniform_int_distribution<int> grupo(1,2);*/
 
 }
 
@@ -257,22 +295,4 @@ void EliminacionDirecta::asignaByes()
 {
     cout << "total equipos:" << totalEquipos
          << "\nnumero de byes: " << numByes << endl;
-
-
-    /*BYES = new Prototipo[numByes];
-
-    while(numByes!=0){
-        for(int i=0;i<totalEquipos;i++){
-                this->numPrototipos=Categoria::MiniRC.getInfoEquipo(i);
-                cout << "Prototipos del equipo '" << i+1 <<"' " << numPrototipos<<endl;
-                for(int j=0;j<numPrototipos;j++){
-                    unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();
-                    default_random_engine motorG(semilla);
-                    uniform_int_distribution<int> pasan(0,numPrototipos);
-                    cout << getInfoPrototipo(i,pasan(motorG)) << endl;
-                    numByes-=1;
-                }
-
-        }
-    }*/
 }

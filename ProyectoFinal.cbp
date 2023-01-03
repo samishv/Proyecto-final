@@ -44,6 +44,7 @@
 		<Unit filename="include/EliminacionDirecta.h" />
 		<Unit filename="include/Enfrentamientos.h" />
 		<Unit filename="include/Equipo.h" />
+		<Unit filename="include/Grupo.h" />
 		<Unit filename="include/Integrantes.h" />
 		<Unit filename="include/Prototipo.h" />
 		<Unit filename="include/Torneo.h" />
@@ -52,6 +53,7 @@
 		<Unit filename="src/EliminacionDirecta.cpp" />
 		<Unit filename="src/Enfrentamientos.cpp" />
 		<Unit filename="src/Equipo.cpp" />
+		<Unit filename="src/Grupo.cpp" />
 		<Unit filename="src/Integrantes.cpp" />
 		<Unit filename="src/Prototipo.cpp" />
 		<Unit filename="src/Torneo.cpp" />
