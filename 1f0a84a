@@ -1,0 +1,29 @@
+[33mb46e705[m[33m ([m[1;36mHEAD -> [m[1;32mEmilio[m[33m, [m[1;31morigin/Emilio[m[33m)[m Se crean grupos correctamente
+[33m5d97779[m nueva clase Grupo y no se como rellenar los grupos con todos los prototipos AYUDA :c
+[33m1155afa[m[33m ([m[1;31morigin/SFML[m[33m)[m mensajes de prototipos
+[33mab480e8[m se agrego sfml al proyecto
+[33m1f0a84a[m solucion de mala condicional en torneo.cpp
+[33m4126eaf[m solucion conflictos 3
+[33m9e2c6de[m E Directa terminada
+[33maf18283[m mas de 0 equipos y minimo 4 proto
+[33m2382e97[m Se resolvio conflicto layout
+[33md1d311e[m commit innecesario2
+[33m1954efd[m Merge pull request #2 from samishv/Emilio
+[33m82702a6[m Clase amiga en Categoria
+[33mfe87148[m Resolvimos conflicto del cbp
+[33mfe4ce25[m Commit innecesario
+[33mb1ce53d[m Merge pull request #1 from samishv/Emilio
+[33mb83ee94[m Cree mi rama
+[33m85f3b62[m[33m ([m[1;31morigin/Nadya[m[33m)[m Habilitado para mas categorias
+[33m5291360[m Llega a la final
+[33mebae5d7[m Imprime enfrentamientos
+[33mf0b28e4[m Asigna arreglo participantes
+[33m4c758a7[m Continua con el otro equipo
+[33ma7a2a7b[m Agina byes sin repeticiones
+[33m90353d1[m Llena arreglo de BYES
+[33mb71dccb[m Asigna Id a los prototipos
+[33mdc0a96e[m Asigna byes repetidos
+[33m3293644[m Funcionan los byes
+[33m35d4388[m Cuenta Total de prototiposs
+[33m680f050[m Los equipos en un vector
+[33me80eb52[m Ingresa todos los datos
