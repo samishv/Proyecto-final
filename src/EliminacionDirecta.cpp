@@ -66,6 +66,7 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
         for(int i=0;i<Categ.numEquipos;i++){
 
             Categ.numPrototipos=(Categ.EQUIPOS + i)->getnumPrototipos();
+                bandera = 0;
 
             do{
                 unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();
@@ -241,7 +242,7 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
 
     for(int j=0; j<3; j++){
 
-        cout << "\nGANADOR " << j+1 << "° lugar: "
+        cout << "\nGANADOR " << j+1 << "Â° lugar: "
              << Categ.GANADORES[j] << endl;
     }
 
