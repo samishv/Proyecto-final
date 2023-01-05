@@ -20,11 +20,14 @@ class Categoria
         int numParticipantes;
         Equipo *EQUIPOS;
         Enfrentamientos *ENFRENTAMIENTOS;
+        string *ORGANIZADOS;
+        string *REVUELTOS;
         string nombreElegido;
         string *NOMBREPARTICIPANTES;
         string TERCEROS[2];
         string GANADORES[3];
         friend class EliminacionDirecta;
+        friend class Grupo;
 
 
     public:

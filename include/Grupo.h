@@ -1,6 +1,6 @@
 #ifndef GRUPO_H
 #define GRUPO_H
-#include "Prototipo.h"
+#include "Categoria.h"
 #include <string>
 
 using namespace std;
@@ -8,12 +8,13 @@ using namespace std;
 class Grupo
 {
     private:
-        Prototipo *PROTOTIPOS;
+        string *NOMBRES;
 
     public:
         Grupo();
         virtual ~Grupo();
-        void setGrupo(int, int);
+        void setGrupo(int, int, Categoria);
+        void mostrarGrupo(int);
 
     protected:
 

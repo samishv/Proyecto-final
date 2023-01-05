@@ -83,3 +83,88 @@
 1672786850 source:c:\users\emilio\desktop\proyecto-final\src\grupo.cpp
 	"Grupo.h"
 
+1672855227 source:c:\users\emili\onedrive\escritorio\proyecto-final\main.cpp
+	<iostream>
+	"Torneo.h"
+
+1672847478 c:\users\emili\onedrive\escritorio\proyecto-final\include\torneo.h
+	"EliminacionDirecta.h"
+	"Categoria.h"
+
+1672873464 c:\users\emili\onedrive\escritorio\proyecto-final\include\eliminaciondirecta.h
+	"Prototipo.h"
+	"Categoria.h"
+	"Torneo.h"
+	"Grupo.h"
+
+1672847603 c:\users\emili\onedrive\escritorio\proyecto-final\include\prototipo.h
+	"Integrantes.h"
+	<string>
+
+1672847478 c:\users\emili\onedrive\escritorio\proyecto-final\include\integrantes.h
+	<string>
+
+1672878321 c:\users\emili\onedrive\escritorio\proyecto-final\include\categoria.h
+	"Equipo.h"
+	"Enfrentamientos.h"
+	<string>
+
+1672847603 c:\users\emili\onedrive\escritorio\proyecto-final\include\equipo.h
+	"Prototipo.h"
+	<string>
+
+1672847478 c:\users\emili\onedrive\escritorio\proyecto-final\include\enfrentamientos.h
+	<string>
+
+1672878321 c:\users\emili\onedrive\escritorio\proyecto-final\include\grupo.h
+	"Categoria.h"
+	<string>
+
+1672878805 source:c:\users\emili\onedrive\escritorio\proyecto-final\src\eliminaciondirecta.cpp
+	"EliminacionDirecta.h"
+	<iostream>
+	<chrono>
+	<random>
+	<windows.h>
+
+1672847478 source:c:\users\emili\onedrive\escritorio\proyecto-final\src\enfrentamientos.cpp
+	"Enfrentamientos.h"
+
+1672855227 source:c:\users\emili\onedrive\escritorio\proyecto-final\src\equipo.cpp
+	"Equipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672878625 source:c:\users\emili\onedrive\escritorio\proyecto-final\src\grupo.cpp
+	"Grupo.h"
+	<iostream>
+
+1672847603 source:c:\users\emili\onedrive\escritorio\proyecto-final\src\integrantes.cpp
+	"Integrantes.h"
+	<iostream>
+	<sstream>
+
+1672847603 source:c:\users\emili\onedrive\escritorio\proyecto-final\src\prototipo.cpp
+	"Prototipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672847603 source:c:\users\emili\onedrive\escritorio\proyecto-final\src\torneo.cpp
+	"Torneo.h"
+	"Categoria.h"
+	<string>
+	<iostream>
+
+1672873464 source:c:\users\emili\onedrive\escritorio\proyecto-final\src\categoria.cpp
+	"Categoria.h"
+	"EliminacionDirecta.h"
+	<iostream>
+	<sstream>
+	<string>
+	<chrono>
+	<random>
+	<windows.h>
+	<vector>
+

@@ -16,7 +16,6 @@ int main()
         //Llenamos el objeto
         Torneo Robotica{};
         Robotica.setTorneo();
-        //Robotica.setEncuentros();
         bool activo{true};
 
         do{

@@ -27,7 +27,6 @@ void Equipo::setEquipo(int contProtipos)
 
     for(int i{0}; i < numPrototipos; i++){
         cout << "\n\nIngrese informacion del prototipo '" << i + 1 << "'";
-        cout << "\ncontPrototpipos: " << this->contPrototipos<<endl;
         (PROTOTIPOS + i)->setPrototipo(this->contPrototipos);
         this->contPrototipos ++;
     }

@@ -251,44 +251,55 @@ void EliminacionDirecta::eliminacionDirecta(Categoria& Categ)
 void EliminacionDirecta::roundRobin(Categoria& Categ)
 {
     int grupos3{}, grupos4{};
-    int prototipo{};
+    int prototipoNum{}, residuo{};
 
-    grupos4 = Categ.totalPrototipos%3;
-    grupos3 = Categ.totalPrototipos/3 - grupos4;
+    residuo = Categ.totalPrototipos%4;
+
+    switch(residuo){
+        case 1:
+            grupos3 = 3;
+            break;
+        case 2:
+            grupos3 = 2;
+            break;
+        case 3:
+            grupos3 = 1;
+            break;
+        default:
+            grupos3 = 0;
+            break;
+    }
+
+    grupos4 = (Categ.totalPrototipos - grupos3*3)/4;
 
     GRUPOS3 = new Grupo[grupos3];
     GRUPOS4 = new Grupo[grupos4];
 
-    for(int i=0; i<grupos4; i++){
-        for(int j=0; j<4; j++){
-            GRUPOS4[i].setGrupo(4, prototipo);
-            prototipo += 4;
+    if(grupos4!=0){
+        for(int i=0; i<grupos4; i++){
+            GRUPOS4[i].setGrupo(4, prototipoNum, Categ);
+            prototipoNum +=4;
         }
     }
-    /*
-    nombreElegido=(EQUIPOS + i)->getInfoPrototipo(elegido);
-    (PROTOTIPOS + i)->setPrototipo(this->contPrototipos);
 
-
-    string *GRUPO1{}, *GRUPO2{};
-    int *PUNTOS1{}, *PUNTOS2{};
-
-    if(Categ.totalPrototipos%2 == 0){
-        GRUPO1 = new string [Categ.totalPrototipos/2];
-        PUNTOS1 = new int [Categ.totalPrototipos/2];
-        GRUPO2 = new string [Categ.totalPrototipos/2];
-        PUNTOS2 = new int [Categ.totalPrototipos/2];
-    }else{
-        GRUPO1 = new string [Categ.totalPrototipos+1/2];
-        PUNTOS1 = new int [Categ.totalPrototipos+1/2];
-        GRUPO2 = new string [Categ.totalPrototipos-1/2];
-        PUNTOS2 = new int [Categ.totalPrototipos-1/2];
+    if(grupos3!=0){
+        for(int i=0; i<grupos3; i++){
+            GRUPOS3[i].setGrupo(3, prototipoNum, Categ);
+            prototipoNum +=3;
+        }
     }
 
-    unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();
-    default_random_engine motorG(semilla);
-    uniform_int_distribution<int> grupo(1,2);*/
+    //////////////////////////////////////////////////////////////////////
+    //De aqui para abajo es comprobacion de la impresion correcta
+    //////////////////////////////////////////////////////////////////////
+    for(int i=0; i<Categ.totalPrototipos; i++){
+        cout << Categ.REVUELTOS[i];
+    }
 
+    cout << endl;
+
+    GRUPOS3[0].mostrarGrupo(3);
+    GRUPOS3[1].mostrarGrupo(3);
 }
 
 void EliminacionDirecta::asignaByes()

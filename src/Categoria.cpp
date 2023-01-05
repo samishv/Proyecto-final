@@ -23,6 +23,7 @@ Categoria::~Categoria()
 
 void Categoria::setCategoria()
 {
+    int pos{0};
     do{
         cout << "Ingrese la cantidad de equipos que participaran: ";
         cin >> numEquipos;
@@ -39,9 +40,39 @@ void Categoria::setCategoria()
         cout << "\n\nIngrese nombre del equipo " << i+1 << " y registre sus prototipos\n";
         (EQUIPOS + i)->setEquipo(totalPrototipos);
         totalPrototipos+=(EQUIPOS + i)->getnumPrototipos();
-
     }
-    cout << totalPrototipos << endl;
+
+    ORGANIZADOS = new string[totalPrototipos];
+
+    for(int i{0}; i < numEquipos; i++){
+        for(int j{0}; j < (EQUIPOS + i)->getnumPrototipos(); j++){
+            ORGANIZADOS[pos] = (EQUIPOS + i)->getInfoPrototipo(j);
+            pos++;
+        }
+    }
+
+    pos = 0;
+
+    REVUELTOS = new string[totalPrototipos];
+    REVUELTOS[totalPrototipos-1] = "libre";
+
+    unsigned int semilla = chrono::steady_clock::now().time_since_epoch().count();
+    default_random_engine motorG(semilla);
+    uniform_int_distribution<int> elegido(0,totalPrototipos-1);
+
+    while(REVUELTOS[totalPrototipos-1] == "libre"){
+        int lugar;
+        lugar = elegido(motorG);
+
+        if(ORGANIZADOS[lugar] == "usado"){
+            continue;
+        }
+
+        REVUELTOS[pos] = ORGANIZADOS[lugar];
+        ORGANIZADOS[lugar] = "usado";
+
+        pos++;
+    }
 
 }
 

@@ -1,4 +1,7 @@
 #include "Grupo.h"
+#include <iostream>
+
+using namespace std;
 
 Grupo::Grupo()
 {
@@ -10,14 +13,18 @@ Grupo::~Grupo()
     //dtor
 }
 
-void Grupo::setGrupo(int tamanio, int inicio)
+void Grupo::setGrupo(int tamanio, int inicio, Categoria Categ)
 {
-    PROTOTIPOS = new Prototipo[tamanio];
+    NOMBRES = new string[tamanio];
 
     for(int i=0; i<tamanio; i++){
-        //(PROTOTIPOS + i) = (EQUIPOS + i)->getInfoPrototipo(inicio+i);
+        NOMBRES[i] = Categ.REVUELTOS[inicio+i];
     }
+}
 
-    /*(EQUIPOS + i)->getInfoPrototipo(elegido);
-    (PROTOTIPOS + i)->setPrototipo(this->contPrototipos);*/
+void Grupo::mostrarGrupo(int tamanio)
+{
+    for(int i=0; i<tamanio; i++){
+        cout << NOMBRES[i] << endl;
+    }
 }
