@@ -1,0 +1,226 @@
+# depslib dependency file v1.0
+1672539235 source:c:\users\emili\downloads\proyecto-competencia\main.cpp
+	<iostream>
+	"Torneo.h"
+
+1672935309 c:\users\emili\downloads\proyecto-competencia\include\torneo.h
+	"EliminacionDirecta.h"
+	"Categoria.h"
+
+1672935334 c:\users\emili\downloads\proyecto-competencia\include\eliminaciondirecta.h
+	"Prototipo.h"
+	"Categoria.h"
+	"Torneo.h"
+
+1672933504 c:\users\emili\downloads\proyecto-competencia\include\prototipo.h
+	"Integrantes.h"
+	<string>
+
+1672539235 c:\users\emili\downloads\proyecto-competencia\include\integrantes.h
+	<string>
+
+1672936190 c:\users\emili\downloads\proyecto-competencia\include\categoria.h
+	"Equipo.h"
+	"Enfrentamientos.h"
+	<string>
+
+1672933504 c:\users\emili\downloads\proyecto-competencia\include\equipo.h
+	"Prototipo.h"
+	<string>
+
+1672539235 c:\users\emili\downloads\proyecto-competencia\include\enfrentamientos.h
+	<string>
+
+1672539235 source:c:\users\emili\downloads\proyecto-competencia\src\enfrentamientos.cpp
+	"Enfrentamientos.h"
+
+1672933879 source:c:\users\emili\downloads\proyecto-competencia\src\equipo.cpp
+	"Equipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672933879 source:c:\users\emili\downloads\proyecto-competencia\src\integrantes.cpp
+	"Integrantes.h"
+	<iostream>
+	<sstream>
+
+1672933879 source:c:\users\emili\downloads\proyecto-competencia\src\prototipo.cpp
+	"Prototipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672934994 source:c:\users\emili\downloads\proyecto-competencia\src\torneo.cpp
+	"Torneo.h"
+	<string>
+	<iostream>
+
+1672935985 source:c:\users\emili\downloads\proyecto-competencia\src\eliminaciondirecta.cpp
+	"EliminacionDirecta.h"
+	<iostream>
+	<chrono>
+	<random>
+	<windows.h>
+
+1672935512 source:c:\users\emili\downloads\proyecto-competencia\src\categoria.cpp
+	"Categoria.h"
+	"EliminacionDirecta.h"
+	<iostream>
+	<sstream>
+	<string>
+	<chrono>
+	<random>
+	<windows.h>
+	<vector>
+
+1672539235 source:c:\users\emili\downloads\proyecto-competencia2\main.cpp
+	<iostream>
+	"Torneo.h"
+
+1672935309 c:\users\emili\downloads\proyecto-competencia2\include\torneo.h
+	"EliminacionDirecta.h"
+	"Categoria.h"
+
+1672935334 c:\users\emili\downloads\proyecto-competencia2\include\eliminaciondirecta.h
+	"Prototipo.h"
+	"Categoria.h"
+	"Torneo.h"
+
+1672933504 c:\users\emili\downloads\proyecto-competencia2\include\prototipo.h
+	"Integrantes.h"
+	<string>
+
+1672539235 c:\users\emili\downloads\proyecto-competencia2\include\integrantes.h
+	<string>
+
+1672936190 c:\users\emili\downloads\proyecto-competencia2\include\categoria.h
+	"Equipo.h"
+	"Enfrentamientos.h"
+	<string>
+
+1672933504 c:\users\emili\downloads\proyecto-competencia2\include\equipo.h
+	"Prototipo.h"
+	<string>
+
+1672539235 c:\users\emili\downloads\proyecto-competencia2\include\enfrentamientos.h
+	<string>
+
+1672937532 source:c:\users\emili\downloads\proyecto-competencia2\src\categoria.cpp
+	"Categoria.h"
+	"EliminacionDirecta.h"
+	<iostream>
+	<sstream>
+	<string>
+	<chrono>
+	<random>
+	<windows.h>
+	<vector>
+
+1672937963 source:c:\users\emili\downloads\proyecto-competencia2\src\eliminaciondirecta.cpp
+	"EliminacionDirecta.h"
+	<iostream>
+	<chrono>
+	<random>
+	<windows.h>
+
+1672539235 source:c:\users\emili\downloads\proyecto-competencia2\src\enfrentamientos.cpp
+	"Enfrentamientos.h"
+
+1672937724 source:c:\users\emili\downloads\proyecto-competencia2\src\equipo.cpp
+	"Equipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672933879 source:c:\users\emili\downloads\proyecto-competencia2\src\integrantes.cpp
+	"Integrantes.h"
+	<iostream>
+	<sstream>
+
+1672937724 source:c:\users\emili\downloads\proyecto-competencia2\src\prototipo.cpp
+	"Prototipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672937392 source:c:\users\emili\downloads\proyecto-competencia2\src\torneo.cpp
+	"Torneo.h"
+	<string>
+	<iostream>
+
+1672938118 source:c:\users\emili\downloads\proyecto-competencia3\main.cpp
+	<iostream>
+	"Torneo.h"
+
+1672943806 c:\users\emili\downloads\proyecto-competencia3\include\torneo.h
+	"EliminacionDirecta.h"
+	"Categoria.h"
+
+1672943806 c:\users\emili\downloads\proyecto-competencia3\include\eliminaciondirecta.h
+	"Prototipo.h"
+	"Categoria.h"
+	"Torneo.h"
+
+1672943806 c:\users\emili\downloads\proyecto-competencia3\include\prototipo.h
+	"Integrantes.h"
+	<string>
+
+1672943806 c:\users\emili\downloads\proyecto-competencia3\include\integrantes.h
+	<string>
+
+1672943806 c:\users\emili\downloads\proyecto-competencia3\include\categoria.h
+	"Equipo.h"
+	"Enfrentamientos.h"
+	<string>
+
+1672943806 c:\users\emili\downloads\proyecto-competencia3\include\equipo.h
+	"Prototipo.h"
+	<string>
+
+1672943806 c:\users\emili\downloads\proyecto-competencia3\include\enfrentamientos.h
+	<string>
+
+1672937532 source:c:\users\emili\downloads\proyecto-competencia3\src\categoria.cpp
+	"Categoria.h"
+	"EliminacionDirecta.h"
+	<iostream>
+	<sstream>
+	<string>
+	<chrono>
+	<random>
+	<windows.h>
+	<vector>
+
+1672937963 source:c:\users\emili\downloads\proyecto-competencia3\src\eliminaciondirecta.cpp
+	"EliminacionDirecta.h"
+	<iostream>
+	<chrono>
+	<random>
+	<windows.h>
+
+1672539235 source:c:\users\emili\downloads\proyecto-competencia3\src\enfrentamientos.cpp
+	"Enfrentamientos.h"
+
+1672937724 source:c:\users\emili\downloads\proyecto-competencia3\src\equipo.cpp
+	"Equipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672933879 source:c:\users\emili\downloads\proyecto-competencia3\src\integrantes.cpp
+	"Integrantes.h"
+	<iostream>
+	<sstream>
+
+1672937724 source:c:\users\emili\downloads\proyecto-competencia3\src\prototipo.cpp
+	"Prototipo.h"
+	<iostream>
+	<string>
+	<sstream>
+
+1672937392 source:c:\users\emili\downloads\proyecto-competencia3\src\torneo.cpp
+	"Torneo.h"
+	<string>
+	<iostream>
+
